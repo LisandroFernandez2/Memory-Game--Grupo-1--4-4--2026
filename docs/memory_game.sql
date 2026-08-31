@@ -42,11 +42,6 @@ CREATE TABLE `conjuntos_de_cartas` (
 -- Volcado de datos para la tabla `conjuntos_de_cartas`
 --
 
-INSERT INTO `conjuntos_de_cartas` (`ID`, `cantidad_pares`, `nombre`, `tema`, `sprite_base`) VALUES
-(1, 8, 'Animales', 'Fauna', 'animales.png'),
-(2, 10, 'Videojuegos', 'Gaming', 'videojuegos.png'),
-(3, 12, 'Frutas', 'Alimentos', 'frutas.png');
-
 -- --------------------------------------------------------
 
 --
@@ -63,11 +58,6 @@ CREATE TABLE `jugadores` (
 --
 -- Volcado de datos para la tabla `jugadores`
 --
-
-INSERT INTO `jugadores` (`ID`, `nombre`, `apellido`) VALUES
-(1, 'Nicolas', 'Gomez'),
-(2, 'Lucas', 'Martinez'),
-(3, 'Sofia', 'Rodriguez');
 
 -- --------------------------------------------------------
 
@@ -87,11 +77,6 @@ CREATE TABLE `pares` (
 --
 -- Volcado de datos para la tabla `pares`
 --
-
-INSERT INTO `pares` (`ID`, `CDC_ID`, `par_id`, `valor_pareja`, `imagen`) VALUES
-(1, 1, 1, 'Perro', 'perro.png'),
-(2, 2, 1, 'Mario', 'mario.png'),
-(3, 3, 1, 'Manzana', 'manzana.png');
 
 -- --------------------------------------------------------
 
@@ -113,11 +98,6 @@ CREATE TABLE `partida` (
 -- Volcado de datos para la tabla `partida`
 --
 
-INSERT INTO `partida` (`ID`, `nivel_dificultad`, `fecha_inicio`, `fecha_fin`, `tiempo_total`, `JUGADORES_ID`) VALUES
-(1, 'Facil', '2026-08-31 10:00:00', '2026-08-31 10:05:30', '00:05:30', 1),
-(2, 'Medio', '2026-08-31 11:00:00', '2026-08-31 11:08:45', '00:08:45', 2),
-(3, 'Dificil', '2026-08-31 12:00:00', '2026-08-31 12:12:20', '00:12:20', 3);
-
 -- --------------------------------------------------------
 
 --
@@ -136,12 +116,6 @@ CREATE TABLE `ranking` (
 --
 -- Volcado de datos para la tabla `ranking`
 --
-
-INSERT INTO `ranking` (`ID`, `PARTIDAS_ID`, `puntaje`, `dificultad_del_nivel`, `mejor_tiempo`) VALUES
-(1, 1, 850.50, 'Facil', '00:05:30'),
-(2, 2, 780.00, 'Medio', '00:08:45'),
-(3, 3, 802.50, 'Dificil', '00:12:20');
-
 -- --------------------------------------------------------
 
 --
@@ -161,11 +135,6 @@ CREATE TABLE `registros_intento_de_volteo` (
 --
 -- Volcado de datos para la tabla `registros_intento_de_volteo`
 --
-
-INSERT INTO `registros_intento_de_volteo` (`ID`, `PARTIDA_ID`, `carta_id`, `carta1_id`, `timestamp`, `fue_acierto`) VALUES
-(1, 1, 1, 2, '2026-08-31 10:01:15', 1),
-(2, 2, 1, 3, '2026-08-31 11:02:30', 0),
-(3, 3, 2, 4, '2026-08-31 12:03:45', 1);
 
 -- --------------------------------------------------------
 
@@ -188,11 +157,6 @@ CREATE TABLE `resultado_final` (
 -- Volcado de datos para la tabla `resultado_final`
 --
 
-INSERT INTO `resultado_final` (`ID`, `PARTIDA_ID`, `intentos_totales`, `puntaje_eficiencia`, `tiempo_tardado`, `fallos`, `aciertos`) VALUES
-(1, 1, 12, 85.50, '00:05:30', 4, 8),
-(2, 2, 20, 78.00, '00:08:45', 10, 10),
-(3, 3, 30, 80.25, '00:12:20', 6, 24);
-
 -- --------------------------------------------------------
 
 --
@@ -212,11 +176,6 @@ CREATE TABLE `tableros_generados` (
 --
 -- Volcado de datos para la tabla `tableros_generados`
 --
-
-INSERT INTO `tableros_generados` (`ID`, `CDC_ID`, `PARTIDA_ID`, `estado_inicial`, `tamaño_columnas`, `tamaño_filas`) VALUES
-(1, 1, 1, 'Oculto', 4, 4),
-(2, 2, 2, 'Oculto', 5, 4),
-(3, 3, 3, 'Oculto', 6, 4);
 
 --
 -- Índices para tablas volcadas
