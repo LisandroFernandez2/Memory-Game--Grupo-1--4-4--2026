@@ -1,0 +1,175 @@
+CREATE DATABASE IF NOT EXISTS memory_game;
+USE memory_game;
+
+CREATE TABLE JUGADORES (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    apellido VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE CONJUNTOS_DE_CARTAS (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    cantidad_pares INT NOT NULL,
+    nombre VARCHAR(100) NOT NULL,
+    tema VARCHAR(100),
+    sprite_base VARCHAR(255)
+);
+
+CREATE TABLE PARTIDA (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    nivel_dificultad VARCHAR(50) NOT NULL,
+    fecha_inicio DATETIME NOT NULL,
+    fecha_fin DATETIME,
+    tiempo_total TIME,
+
+    JUGADORES_ID INT NOT NULL,
+
+    CONSTRAINT FK_PARTIDA_JUGADOR
+        FOREIGN KEY (JUGADORES_ID)
+        REFERENCES JUGADORES(ID)
+        ON UPDATE CASCADE
+        ON DELETE CASCADE
+);
+
+CREATE TABLE TABLEROS_GENERADOS (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    CDC_ID INT NOT NULL,
+    PARTIDA_ID INT NOT NULL,
+
+    estado_inicial VARCHAR(50),
+    tamaño_columnas INT NOT NULL,
+    tamaño_filas INT NOT NULL,
+
+    CONSTRAINT FK_TABLERO_CONJUNTO
+        FOREIGN KEY (CDC_ID)
+        REFERENCES CONJUNTOS_DE_CARTAS(ID)
+        ON UPDATE CASCADE
+        ON DELETE RESTRICT,
+
+    CONSTRAINT FK_TABLERO_PARTIDA
+        FOREIGN KEY (PARTIDA_ID)
+        REFERENCES PARTIDA(ID)
+        ON UPDATE CASCADE
+        ON DELETE CASCADE,
+
+    -- La relación CONTENER es 1:1
+    CONSTRAINT UQ_TABLERO_PARTIDA
+        UNIQUE (PARTIDA_ID)
+);
+
+CREATE TABLE PARES (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    CDC_ID INT NOT NULL,
+    par_id INT NOT NULL,
+    valor_pareja VARCHAR(100),
+    imagen VARCHAR(255),
+
+    CONSTRAINT FK_PAR_CONJUNTO
+        FOREIGN KEY (CDC_ID)
+        REFERENCES CONJUNTOS_DE_CARTAS(ID)
+        ON UPDATE CASCADE
+        ON DELETE CASCADE
+);
+
+CREATE TABLE RESULTADO_FINAL (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+
+    PARTIDA_ID INT NOT NULL,
+
+    intentos_totales INT DEFAULT 0,
+    puntaje_eficiencia DECIMAL(10,2) DEFAULT 0,
+    tiempo_tardado TIME,
+    fallos INT DEFAULT 0,
+    aciertos INT DEFAULT 0,
+
+    CONSTRAINT FK_RESULTADO_PARTIDA
+        FOREIGN KEY (PARTIDA_ID)
+        REFERENCES PARTIDA(ID)
+        ON UPDATE CASCADE
+        ON DELETE CASCADE,
+
+    -- PARTIDA_RESULTADO_FINAL es 1:1
+    CONSTRAINT UQ_RESULTADO_PARTIDA
+        UNIQUE (PARTIDA_ID)
+);
+
+CREATE TABLE RANKING (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+
+    PARTIDAS_ID INT NOT NULL,
+
+    puntaje DECIMAL(10,2) NOT NULL,
+    dificultad_del_nivel VARCHAR(50),
+    mejor_tiempo TIME,
+
+    CONSTRAINT FK_RANKING_PARTIDA
+        FOREIGN KEY (PARTIDAS_ID)
+        REFERENCES PARTIDA(ID)
+        ON UPDATE CASCADE
+        ON DELETE CASCADE
+);
+
+CREATE TABLE REGISTROS_INTENTO_DE_VOLTEO (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+
+    PARTIDA_ID INT NOT NULL,
+
+    carta_id INT,
+    carta1_id INT,
+    `timestamp` DATETIME NOT NULL,
+    fue_acierto BOOLEAN NOT NULL DEFAULT FALSE,
+
+    CONSTRAINT FK_REGISTRO_PARTIDA
+        FOREIGN KEY (PARTIDA_ID)
+        REFERENCES PARTIDA(ID)
+        ON UPDATE CASCADE
+        ON DELETE CASCADE
+);
+
+INSERT INTO JUGADORES (nombre, apellido) VALUES
+('Nicolas', 'Gomez'),
+('Lucas', 'Martinez'),
+('Sofia', 'Rodriguez');
+
+INSERT INTO CONJUNTOS_DE_CARTAS
+(cantidad_pares, nombre, tema, sprite_base) VALUES
+(8, 'Animales', 'Fauna', 'animales.png'),
+(10, 'Videojuegos', 'Gaming', 'videojuegos.png'),
+(12, 'Frutas', 'Alimentos', 'frutas.png');
+
+INSERT INTO PARTIDA
+(nivel_dificultad, fecha_inicio, fecha_fin, tiempo_total, JUGADORES_ID) VALUES
+('Facil', '2026-08-31 10:00:00', '2026-08-31 10:05:30', '00:05:30', 1),
+('Medio', '2026-08-31 11:00:00', '2026-08-31 11:08:45', '00:08:45', 2),
+('Dificil', '2026-08-31 12:00:00', '2026-08-31 12:12:20', '00:12:20', 3);
+
+INSERT INTO TABLEROS_GENERADOS
+(CDC_ID, PARTIDA_ID, estado_inicial, tamaño_columnas, tamaño_filas) VALUES
+(1, 1, 'Oculto', 4, 4),
+(2, 2, 'Oculto', 5, 4),
+(3, 3, 'Oculto', 6, 4);
+
+INSERT INTO PARES
+(CDC_ID, par_id, valor_pareja, imagen) VALUES
+(1, 1, 'Perro', 'perro.png'),
+(2, 1, 'Mario', 'mario.png'),
+(3, 1, 'Manzana', 'manzana.png');
+
+INSERT INTO RESULTADO_FINAL
+(PARTIDA_ID, intentos_totales, puntaje_eficiencia,
+tiempo_tardado, fallos, aciertos) VALUES
+(1, 12, 85.50, '00:05:30', 4, 8),
+(2, 20, 78.00, '00:08:45', 10, 10),
+(3, 30, 80.25, '00:12:20', 6, 24);
+
+INSERT INTO RANKING
+(PARTIDAS_ID, puntaje, dificultad_del_nivel, mejor_tiempo) VALUES
+(1, 850.50, 'Facil', '00:05:30'),
+(2, 780.00, 'Medio', '00:08:45'),
+(3, 802.50, 'Dificil', '00:12:20');
+
+INSERT INTO REGISTROS_INTENTO_DE_VOLTEO
+(PARTIDA_ID, carta_id, carta1_id, `timestamp`, fue_acierto) VALUES
+(1, 1, 2, '2026-08-31 10:01:15', TRUE),
+(2, 1, 3, '2026-08-31 11:02:30', FALSE),
+(3, 2, 4, '2026-08-31 12:03:45', TRUE);
