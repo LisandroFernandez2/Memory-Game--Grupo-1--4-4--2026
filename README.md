@@ -9,7 +9,7 @@ menor tiempo posible.
 - **Base De Datos**: MySQL
 - **IDE**: Visual Studio 2022 / Visual Studio Insiders 2026
 ## ESTRUCTURA DE CARPETAS
-- **/src** → Código fuente C# (MonoGame)
-- **/db** → Scripts SQL (INSERT de prueba, consultas analíticas)
-- **/docs** → DER, modelo lógico, informe técnico, justificación de normalización y script de creación de tablas.
-- **/assets** → Sprites, sonidos y recursos gráficos.
+- **[/src](./src)**: Código fuente C# (MonoGame)
+- **[/db](./db)**: Scripts SQL (INSERT de prueba, consultas analíticas)
+- **[/docs](./docs)**: DER, modelo lógico, informe técnico, justificación de normalización
+- **[/assets](./assets)**: Sprites, sonidos, recursos gráficos
