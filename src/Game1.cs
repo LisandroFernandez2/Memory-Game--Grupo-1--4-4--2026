@@ -1,33 +1,47 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-
+using Microsoft.Xna.Framework.Media;
 namespace MemoryGame
 {
     public class Game1 : Game
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
-
+        private Song Musica;
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
+
+            Window.Title = "Memory Game";
         }
 
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
+            
+            _graphics.PreferredBackBufferWidth = GraphicsDevice.DisplayMode.Width;
+            _graphics.PreferredBackBufferHeight = GraphicsDevice.DisplayMode.Height;
 
+            
+            _graphics.IsFullScreen = true;
+
+            
+            _graphics.ApplyChanges();
             base.Initialize();
         }
         public Texture2D TexturaDeFondoPantallaInicial;
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
+
             TexturaDeFondoPantallaInicial = Content.Load<Texture2D>("bg_menu_bosque");
-            // TODO: use this.Content to load your game content here
+
+            Musica = Content.Load<Song>("musica");
+
+            MediaPlayer.Play(Musica);
+            MediaPlayer.IsRepeating = true;
         }
 
         protected override void Update(GameTime gameTime)
