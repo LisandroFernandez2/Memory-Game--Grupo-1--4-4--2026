@@ -18,6 +18,10 @@ namespace MemoryGame
         private bool BotonJugarPresionado;
         private Rectangle RectanguloBotonSalir;
         private bool BotonSalirPresionado;
+        private Texture2D BtnRetrocederNormal;
+        private Texture2D BtnRetrocederPresionado;
+        private Rectangle RectanguloBotonRetroceder;
+        private bool BotonRetrocederPresionado;
         public enum Pantalla
         {
             PantallaInicial,
@@ -62,8 +66,11 @@ namespace MemoryGame
 
             BtnSalirNormal = Content.Load<Texture2D>("btn_salir_normal");
             BtnSalirPresionado = Content.Load<Texture2D>("btn_salir_presionado");
+            
             Musica = Content.Load<Song>("musica");
-
+            
+            BtnRetrocederNormal = Content.Load<Texture2D>("btn_retroceder_normal");
+            BtnRetrocederPresionado = Content.Load<Texture2D>("btn_retroceder_presionado");
             MediaPlayer.Play(Musica);
             MediaPlayer.IsRepeating = true;
         }
@@ -113,6 +120,14 @@ namespace MemoryGame
                     BotonJugarPresionado = false;
                 }
             }
+            if (pantallaActual == Pantalla.PantallaNiveles)
+            {
+                if (mouse.LeftButton == ButtonState.Pressed &&
+                    RectanguloBotonRetroceder.Contains(mouse.Position))
+                {
+                    pantallaActual = Pantalla.PantallaInicial;
+                }
+            }
 
             base.Update(gameTime);
         }
@@ -136,14 +151,36 @@ namespace MemoryGame
                     Color.White
                 );
 
-                int ancho = (int)(BtnJugarNormal.Width * 1.3f);
-                int alto = (int)(BtnJugarNormal.Height * 1.3f);
+                int anchoBoton = (int)(GraphicsDevice.Viewport.Width * 0.20f);
+
+                int altoJugar = (int)(
+                    BtnJugarNormal.Height *
+                    ((float)anchoBoton / BtnJugarNormal.Width)
+                );
+
+                int altoSalir = (int)(
+                    BtnSalirNormal.Height *
+                    ((float)anchoBoton / BtnSalirNormal.Width)
+                );
+
+                int xJugar = (GraphicsDevice.Viewport.Width - anchoBoton) / 2;
+                int xSalir = (GraphicsDevice.Viewport.Width - anchoBoton) / 2;
+
+                int yJugar = (int)(GraphicsDevice.Viewport.Height * 0.40f);
+                int ySalir = (int)(GraphicsDevice.Viewport.Height * 0.78f);
 
                 RectanguloBotonJugar = new Rectangle(
-                    (GraphicsDevice.Viewport.Width - ancho) / 2,
-                    670,
-                    ancho,
-                    alto
+                    xJugar,
+                    yJugar,
+                    anchoBoton,
+                    altoJugar
+                );
+
+                RectanguloBotonSalir = new Rectangle(
+                    xSalir,
+                    ySalir,
+                    anchoBoton,
+                    altoSalir
                 );
 
                 if (BotonJugarPresionado)
@@ -162,16 +199,6 @@ namespace MemoryGame
                         Color.White
                     );
                 }
-
-                int anchoSalir = (int)(BtnSalirNormal.Width * 1.3f);
-                int altoSalir = (int)(BtnSalirNormal.Height * 1.3f);
-
-                RectanguloBotonSalir = new Rectangle(
-                    (GraphicsDevice.Viewport.Width - anchoSalir) / 2,
-                    1600,
-                    anchoSalir,
-                    altoSalir
-                );
 
                 if (BotonSalirPresionado)
                 {
@@ -202,6 +229,36 @@ namespace MemoryGame
                     ),
                     Color.White
                 );
+                int anchoRetroceder = (int)(GraphicsDevice.Viewport.Width * 0.10f);
+
+                int altoRetroceder = (int)(
+                    BtnRetrocederNormal.Height *
+                    ((float)anchoRetroceder / BtnRetrocederNormal.Width)
+                );
+
+                RectanguloBotonRetroceder = new Rectangle(
+                    GraphicsDevice.Viewport.Width - anchoRetroceder - 40,
+                    40,
+                   anchoRetroceder,
+                   altoRetroceder
+                );
+
+                if (BotonRetrocederPresionado)
+                {
+                    _spriteBatch.Draw(
+                        BtnRetrocederPresionado,
+                        RectanguloBotonRetroceder,
+                        Color.White
+                    );
+                }
+                else
+                {
+                    _spriteBatch.Draw(
+                        BtnRetrocederNormal,
+                        RectanguloBotonRetroceder,
+                        Color.White
+                    );
+                }
             }
             else if (pantallaActual == Pantalla.PantallaJuego)
             {
