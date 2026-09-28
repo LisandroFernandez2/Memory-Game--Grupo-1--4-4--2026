@@ -8,6 +8,16 @@ menor tiempo posible.
 - **Framework**: MonoGame 3.8
 - **Base De Datos**: MySQL
 - **IDE**: Visual Studio 2022 / Visual Studio Insiders 2026
+## INSTRUCCIONES DE EJECUCION
+1- Abrir la barra buscadora de windows y buscar "CMD"
+2- Abrir CMD
+3- Ejecutar las siguientes lineas de codigo:
+git clone https://github.com/LisandroFernandez2/Memory-Game--Grupo-1--4-4--2026.git
+cd Memory-Game--Grupo-1--4-4--2026
+dotnet tool restore
+dotnet build
+dotnet run
+4- ¡A disfrutar! (:
 ## ESTRUCTURA DE CARPETAS
 - **[/src](./src)**: Código fuente C# (MonoGame)
 - **[/db](./db)**: Scripts SQL (INSERT de prueba, consultas analíticas)
