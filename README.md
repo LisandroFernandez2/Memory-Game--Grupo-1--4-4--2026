@@ -12,11 +12,13 @@ menor tiempo posible.
 - Abrir la barra buscadora de windows y buscar "CMD"
 - Abrir CMD
 - Ejecutar las siguientes lineas de codigo:
+```cmd
 git clone https://github.com/LisandroFernandez2/Memory-Game--Grupo-1--4-4--2026.git
 cd Memory-Game--Grupo-1--4-4--2026
 dotnet tool restore
 dotnet build
 dotnet run
+```
 4- ¡A disfrutar! (:
 ## ESTRUCTURA DE CARPETAS
 - **[/src](./src)**: Código fuente C# (MonoGame)
