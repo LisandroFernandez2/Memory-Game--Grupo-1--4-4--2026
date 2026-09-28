@@ -9,9 +9,9 @@ menor tiempo posible.
 - **Base De Datos**: MySQL
 - **IDE**: Visual Studio 2022 / Visual Studio Insiders 2026
 ## INSTRUCCIONES DE EJECUCION
-1- Abrir la barra buscadora de windows y buscar "CMD"
-2- Abrir CMD
-3- Ejecutar las siguientes lineas de codigo:
+- Abrir la barra buscadora de windows y buscar "CMD"
+- Abrir CMD
+- Ejecutar las siguientes lineas de codigo:
 git clone https://github.com/LisandroFernandez2/Memory-Game--Grupo-1--4-4--2026.git
 cd Memory-Game--Grupo-1--4-4--2026
 dotnet tool restore
