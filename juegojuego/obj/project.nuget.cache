@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "IpgRsckVzZA=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\juegojuego.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kevin\\.nuget\\packages\\monogame.content.builder.task\\3.8.5.1\\monogame.content.builder.task.3.8.5.1.nupkg.sha512",
+    "C:\\Users\\kevin\\.nuget\\packages\\monogame.framework.native\\3.8.5.1\\monogame.framework.native.3.8.5.1.nupkg.sha512",
+    "C:\\Users\\kevin\\.nuget\\packages\\monogame.runtime.linux.vulkan\\3.8.5.1\\monogame.runtime.linux.vulkan.3.8.5.1.nupkg.sha512",
+    "C:\\Users\\kevin\\.nuget\\packages\\monogame.runtime.mac.vulkan\\3.8.5.1\\monogame.runtime.mac.vulkan.3.8.5.1.nupkg.sha512",
+    "C:\\Users\\kevin\\.nuget\\packages\\monogame.runtime.windows.vulkan\\3.8.5.1\\monogame.runtime.windows.vulkan.3.8.5.1.nupkg.sha512"
+  ],
+  "logs": []
+}
