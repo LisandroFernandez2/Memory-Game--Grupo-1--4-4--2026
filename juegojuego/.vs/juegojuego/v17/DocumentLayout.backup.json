@@ -1,0 +1,308 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|c:\\users\\kevin\\onedrive\\desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\modonivelcronometro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|solutionrelative:juegojuego\\modosdejuego\\modonivelcronometro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|c:\\users\\kevin\\onedrive\\desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\modomultijugador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|solutionrelative:juegojuego\\modosdejuego\\modomultijugador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|c:\\users\\kevin\\onedrive\\desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\modojuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|solutionrelative:juegojuego\\modosdejuego\\modojuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|c:\\users\\kevin\\onedrive\\desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\modoinfinito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|solutionrelative:juegojuego\\modosdejuego\\modoinfinito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|c:\\users\\kevin\\onedrive\\desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\cronometro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|solutionrelative:juegojuego\\modelos\\cronometro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|c:\\users\\kevin\\onedrive\\desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\jugador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|solutionrelative:juegojuego\\modelos\\jugador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|c:\\users\\kevin\\onedrive\\desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\modo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|solutionrelative:juegojuego\\modelos\\modo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|c:\\users\\kevin\\onedrive\\desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\nivel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|solutionrelative:juegojuego\\modelos\\nivel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|c:\\users\\kevin\\onedrive\\desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\nivelcronometro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|solutionrelative:juegojuego\\modelos\\nivelcronometro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|c:\\users\\kevin\\onedrive\\desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\partida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|solutionrelative:juegojuego\\modelos\\partida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|c:\\users\\kevin\\onedrive\\desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\puntaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|solutionrelative:juegojuego\\modelos\\puntaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|c:\\users\\kevin\\onedrive\\desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\catalogomodosjuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|solutionrelative:juegojuego\\modosdejuego\\catalogomodosjuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|c:\\users\\kevin\\onedrive\\desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\modoclasico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|solutionrelative:juegojuego\\modosdejuego\\modoclasico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|c:\\users\\kevin\\onedrive\\desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\modocontrarreloj.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|solutionrelative:juegojuego\\modosdejuego\\modocontrarreloj.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|c:\\users\\kevin\\onedrive\\desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\modocooperativo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|solutionrelative:juegojuego\\modosdejuego\\modocooperativo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|c:\\users\\kevin\\onedrive\\desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\contadorpartida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|solutionrelative:juegojuego\\modelos\\contadorpartida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|c:\\users\\kevin\\onedrive\\desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\catalogomodos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|solutionrelative:juegojuego\\modelos\\catalogomodos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|c:\\users\\kevin\\onedrive\\desktop\\c# en clases\\juegojuego\\juegojuego\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|solutionrelative:juegojuego\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ModoNivelCronometro.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\ModoNivelCronometro.cs",
+              "RelativeDocumentMoniker": "juegojuego\\modosdejuego\\ModoNivelCronometro.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\ModoNivelCronometro.cs",
+              "RelativeToolTip": "juegojuego\\modosdejuego\\ModoNivelCronometro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T02:50:27.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Cronometro.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\Cronometro.cs",
+              "RelativeDocumentMoniker": "juegojuego\\modelos\\Cronometro.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\Cronometro.cs",
+              "RelativeToolTip": "juegojuego\\modelos\\Cronometro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T02:49:10.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Jugador.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\Jugador.cs",
+              "RelativeDocumentMoniker": "juegojuego\\modelos\\Jugador.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\Jugador.cs",
+              "RelativeToolTip": "juegojuego\\modelos\\Jugador.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T02:49:07.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Nivel.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\Nivel.cs",
+              "RelativeDocumentMoniker": "juegojuego\\modelos\\Nivel.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\Nivel.cs",
+              "RelativeToolTip": "juegojuego\\modelos\\Nivel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T02:48:58.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NivelCronometro.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\NivelCronometro.cs",
+              "RelativeDocumentMoniker": "juegojuego\\modelos\\NivelCronometro.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\NivelCronometro.cs",
+              "RelativeToolTip": "juegojuego\\modelos\\NivelCronometro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T02:48:55.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Partida.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\Partida.cs",
+              "RelativeDocumentMoniker": "juegojuego\\modelos\\Partida.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\Partida.cs",
+              "RelativeToolTip": "juegojuego\\modelos\\Partida.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T02:48:51.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ModoInfinito.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\ModoInfinito.cs",
+              "RelativeDocumentMoniker": "juegojuego\\modosdejuego\\ModoInfinito.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\ModoInfinito.cs",
+              "RelativeToolTip": "juegojuego\\modosdejuego\\ModoInfinito.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T02:48:38.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ModoJuego.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\ModoJuego.cs",
+              "RelativeDocumentMoniker": "juegojuego\\modosdejuego\\ModoJuego.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\ModoJuego.cs",
+              "RelativeToolTip": "juegojuego\\modosdejuego\\ModoJuego.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwDIAAAB2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T02:47:23.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ModoMultijugador.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\ModoMultijugador.cs",
+              "RelativeDocumentMoniker": "juegojuego\\modosdejuego\\ModoMultijugador.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\ModoMultijugador.cs",
+              "RelativeToolTip": "juegojuego\\modosdejuego\\ModoMultijugador.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T02:47:04.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Puntaje.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\Puntaje.cs",
+              "RelativeDocumentMoniker": "juegojuego\\modelos\\Puntaje.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\Puntaje.cs",
+              "RelativeToolTip": "juegojuego\\modelos\\Puntaje.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T02:48:48.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ModoCooperativo.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\ModoCooperativo.cs",
+              "RelativeDocumentMoniker": "juegojuego\\modosdejuego\\ModoCooperativo.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\ModoCooperativo.cs",
+              "RelativeToolTip": "juegojuego\\modosdejuego\\ModoCooperativo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T02:46:32.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Modo.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\Modo.cs",
+              "RelativeDocumentMoniker": "juegojuego\\modelos\\Modo.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\Modo.cs",
+              "RelativeToolTip": "juegojuego\\modelos\\Modo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T02:34:24.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ModoContrarreloj.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\ModoContrarreloj.cs",
+              "RelativeDocumentMoniker": "juegojuego\\modosdejuego\\ModoContrarreloj.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\ModoContrarreloj.cs",
+              "RelativeToolTip": "juegojuego\\modosdejuego\\ModoContrarreloj.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T02:46:02.495Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ModoClasico.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\ModoClasico.cs",
+              "RelativeDocumentMoniker": "juegojuego\\modosdejuego\\ModoClasico.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\ModoClasico.cs",
+              "RelativeToolTip": "juegojuego\\modosdejuego\\ModoClasico.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T02:45:19.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CatalogoModosJuego.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\CatalogoModosJuego.cs",
+              "RelativeDocumentMoniker": "juegojuego\\modosdejuego\\CatalogoModosJuego.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\CatalogoModosJuego.cs",
+              "RelativeToolTip": "juegojuego\\modosdejuego\\CatalogoModosJuego.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T02:33:09.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ContadorPartida.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\ContadorPartida.cs",
+              "RelativeDocumentMoniker": "juegojuego\\modelos\\ContadorPartida.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\ContadorPartida.cs",
+              "RelativeToolTip": "juegojuego\\modelos\\ContadorPartida.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T02:43:08.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Game1.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\Game1.cs",
+              "RelativeDocumentMoniker": "juegojuego\\Game1.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\Game1.cs",
+              "RelativeToolTip": "juegojuego\\Game1.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAawEMAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T02:33:29.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CatalogoModos.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\CatalogoModos.cs",
+              "RelativeDocumentMoniker": "juegojuego\\modelos\\CatalogoModos.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\CatalogoModos.cs",
+              "RelativeToolTip": "juegojuego\\modelos\\CatalogoModos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T01:26:00.64Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
