@@ -1,0 +1,76 @@
+---------------------------------------------
+--      CONSULTAS SQL - MEMORY GAME        --
+---------------------------------------------
+
+1. Listar todos los jugadores registrados
+SELECT ID, nombre, apellido 
+FROM JUGADORES;
+
+
+2. Filtrar partidas por nivel de dificultad
+SELECT ID, nivel_dificultad, fecha_inicio, tiempo_total 
+FROM PARTIDA 
+WHERE nivel_dificultad = 'Facil';
+
+
+3. Calcular el promedio de eficiencia de las partidas
+SELECT AVG(puntaje_eficiencia) AS promedio_eficiencia 
+FROM RESULTADO_FINAL;
+
+
+4. Consultar conjuntos de cartas con más de 8 pares
+SELECT nombre, tema, cantidad_pares 
+FROM CONJUNTOS_DE_CARTAS 
+WHERE cantidad_pares > 8;
+
+
+5. Obtener el ranking ordenado de mejor puntaje
+SELECT ID, PARTIDAS_ID, puntaje, dificultad_del_nivel, mejor_tiempo 
+FROM RANKING 
+ORDER BY puntaje DESC;
+
+
+6. Contar cuántas partidas ha jugado cada usuario
+SELECT 
+    j.nombre, 
+    j.apellido, 
+    COUNT(p.ID) AS total_partidas
+FROM JUGADORES j
+LEFT JOIN PARTIDA p ON j.ID = p.JUGADORES_ID
+GROUP BY j.ID, j.nombre, j.apellido;
+
+
+7. Consultar los intentos de volteo que fueron exitosos
+SELECT ID, PARTIDA_ID, carta_id, `timestamp` 
+FROM REGISTROS_INTENTO_DE_VOLTEO 
+WHERE fue_acierto = TRUE;
+
+
+8. Mostrar los tableros generados ordenados por dimensión
+SELECT ID, CDC_ID, PARTIDA_ID, tamaño_columnas, tamaño_filas 
+FROM TABLEROS_GENERADOS 
+ORDER BY tamaño_columnas DESC;
+
+
+9. Buscar pares asociados a un tema específico
+SELECT 
+    p.valor_pareja, 
+    p.imagen, 
+    c.tema
+FROM PARES p
+JOIN CONJUNTOS_DE_CARTAS c ON p.CDC_ID = c.ID
+WHERE c.tema = 'Fauna';
+
+
+10. Resumen completo de partidas finalizadas con datos del jugador
+SELECT 
+    p.ID AS partida_id,
+    CONCAT(j.nombre, ' ', j.apellido) AS jugador,
+    p.nivel_dificultad,
+    rf.intentos_totales,
+    rf.aciertos,
+    rf.fallos,
+    rf.puntaje_eficiencia
+FROM PARTIDA p
+JOIN JUGADORES j ON p.JUGADORES_ID = j.ID
+JOIN RESULTADO_FINAL rf ON p.ID = rf.PARTIDA_ID;
