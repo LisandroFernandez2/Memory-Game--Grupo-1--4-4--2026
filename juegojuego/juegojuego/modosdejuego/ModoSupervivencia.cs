@@ -9,41 +9,41 @@ namespace juegojuego
         {
         }
 
-        //variable que determinan el modo de juego:
+        // variable que determinan el modo de juego:
 
-        //vidas del jugador
+        // vidas del jugador
         private int _vidas;
         private int _contador;
 
-        //el jugador empieza el juego con 3 vidas (_vidas = 3) y empieza en la ronda 1 (_ronda = 1)  
+        // el jugador empieza el juego con 3 vidas (_vidas = 3) y empieza en la ronda 1 (_ronda = 1)  
         public override void AlEmpezarJuego() => _vidas = 3;
 
-        //si cuando el jugador da vuelta 2 cartas pero no acertó, _vidas se le resta 1. Si acierta, se le suma 1 a _vidas
+        // si cuando el jugador da vuelta 2 cartas pero no acertó, _vidas se le resta 1. Si acierta, se le suma 1 a _vidas
         public override void AlCompletarIntento(Partida partida, bool acierto) 
         {
             if (!acierto) _vidas--;
             else if (acierto) _vidas++;
         }
 
-        //si _vidas es 0, el jugador pierde porque no tiene más vidas
+        // si _vidas es 0, el jugador pierde porque no tiene más vidas
         public override bool Perdio(Partida partida) 
         { 
             return _vidas <= 0; 
         }
 
-        //informacción de cómo está transcurriendo la partida
+        // informacción de cómo está transcurriendo la partida
         public override string[] LineasInfo(Partida partida) 
         { 
             return new[] { $"VIDAS {_vidas}"}; 
         }
 
-        //mensaje con el motivo del cual perdió la partida
+        // mensaje con el motivo del cual perdió la partida
         public override string MotivoDerrota => "TE HAS QUEDADO SIN VIDAS";
 
-        // Todavia no se puede elegir: aparece en la lista como PROXIMAMENTE
+        // juego listo para elegir en el menú
         public override bool Disponible => true;
 
-        // Tablero 8X8
+        // un tablero 8X8
         public override Nivel[] Niveles => new Nivel[] { new Nivel("", 8, 8) };
 
     }
