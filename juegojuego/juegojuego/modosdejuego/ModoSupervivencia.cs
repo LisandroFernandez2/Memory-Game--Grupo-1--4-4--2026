@@ -22,7 +22,7 @@ namespace juegojuego
         public override void AlCompletarIntento(Partida partida, bool acierto) 
         {
             if (!acierto) _vidas--;
-            else if (acierto) _vidas++;
+            else if (acierto) _vidas++; _contador++;
         }
 
         // si _vidas es 0, el jugador pierde porque no tiene más vidas
@@ -38,7 +38,7 @@ namespace juegojuego
         }
 
         // mensaje con el motivo del cual perdió la partida
-        public override string MotivoDerrota => "TE HAS QUEDADO SIN VIDAS";
+        public override string MotivoDerrota => $"TE HAS QUEDADO SIN VIDAS, CANTIDAD DE ACIERTOS {_contador}";
 
         // juego listo para elegir en el menú
         public override bool Disponible => true;
