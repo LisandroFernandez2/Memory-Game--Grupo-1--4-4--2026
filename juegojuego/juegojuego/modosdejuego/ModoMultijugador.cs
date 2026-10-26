@@ -20,8 +20,30 @@ namespace juegojuego
         {
         }
 
-        // Todavia no se puede elegir: aparece en la lista como PROXIMAMENTE
-        public override bool Disponible => false;
+        // Si el jugador acierta, sigue su turno. Si falla el jugador, el turno pasa al siguiente jugador
+        public override void AlCompletarIntento(Partida partida, bool acierto) 
+        {
+            if(!acierto) 
+            {
+                partida.PasarTurno(); 
+            } 
+        }
+
+        // Informa el turno del jugador y los pares que tiene
+        public override string[] LineasInfo(Partida partida)
+        {
+            return new[] { $"Turno del jugador {partida.JugadorActual.Nombre}, cantidad de pares {partida.Jugadores[0].Aciertos}" };
+        }
+
+
+        // Muestra el ganador de la partida, el tiempo y los intentos
+        public override string TituloVictoria(Partida partida)
+        {
+            return base.TituloVictoria(partida);
+        }
+
+        // Juego disponible
+        public override bool Disponible => true;
 
         // Cuantos jugadores comparten la partida
         public override int CantidadJugadores => 2;
