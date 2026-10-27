@@ -1,0 +1,6 @@
+C:\Users\kevin\OneDrive\Desktop\c# en clases\juegojuego\juegojuego\obj\Release\net9.0\mgcb.tool.restore
+C:\Users\kevin\OneDrive\Desktop\c# en clases\juegojuego\juegojuego\obj\Release\net9.0\juegojuego.csproj.AssemblyReference.cache
+C:\Users\kevin\OneDrive\Desktop\c# en clases\juegojuego\juegojuego\obj\Release\net9.0\juegojuego.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kevin\OneDrive\Desktop\c# en clases\juegojuego\juegojuego\obj\Release\net9.0\juegojuego.AssemblyInfoInputs.cache
+C:\Users\kevin\OneDrive\Desktop\c# en clases\juegojuego\juegojuego\obj\Release\net9.0\juegojuego.AssemblyInfo.cs
+C:\Users\kevin\OneDrive\Desktop\c# en clases\juegojuego\juegojuego\obj\Release\net9.0\juegojuego.csproj.CoreCompileInputs.cache

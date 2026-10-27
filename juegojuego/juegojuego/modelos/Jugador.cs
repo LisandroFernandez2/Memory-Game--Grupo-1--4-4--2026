@@ -14,11 +14,11 @@ namespace juegojuego
         // Constructor
         // Recibe: nombre del jugador
         // Devuelve: nada crea al jugador con aciertos y fallos en 0
-        public Jugador(string nombre, int aciertos, int fallos)
+        public Jugador(string nombre)
         {
             this.nombre = nombre;
-            this.aciertos = aciertos;
-            this.fallos = fallos;
+            aciertos = 0;
+            fallos = 0;
         }
     }
 }
