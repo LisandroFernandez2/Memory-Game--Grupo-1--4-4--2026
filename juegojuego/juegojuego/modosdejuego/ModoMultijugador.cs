@@ -46,38 +46,41 @@ namespace juegojuego
         // Muestra el ganador de la partida, el tiempo y los intentos
         public override string TituloVictoria(Partida partida)
         {
-            Jugador jugador1 = partida.Jugadores[0];
-            Jugador jugador2 = partida.Jugadores[1];
-            Jugador jugador3 = partida.Jugadores[2];
-            Jugador jugador4 = partida.Jugadores[3];
-            if (jugador1.aciertos > jugador2.aciertos && jugador1.aciertos > jugador3.aciertos && jugador1.aciertos > jugador4.aciertos)
+            Jugador jugador_gan = ganador(partida);
+            if (jugador_gan != null)
             {
-                return $"GANO pepe {jugador1.nombre}";
+                return $"GANO {jugador_gan.nombre}";
             }
-            else if (jugador2.aciertos > jugador1.aciertos && jugador2.aciertos > jugador3.aciertos && jugador2.aciertos > jugador4.aciertos)
+            return "empate";
+        }
+
+        public Jugador ganador(Partida partida)
+        {
+            Jugador jugadoractual = partida.Jugadores[0];
+            Jugador jugadormax = partida.Jugadores[0];
+            for (int i = 0; i <= partida.Jugadores.Count - 1; i++)
             {
-                return $"GANO pedro {jugador2.nombre}";
+                jugadoractual = partida.Jugadores[i];
+                if (jugadormax.aciertos < jugadoractual.aciertos)
+                {
+                    jugadormax = jugadoractual;
+                }
             }
-            if (jugador3.aciertos > jugador2.aciertos && jugador3.aciertos > jugador1.aciertos && jugador3.aciertos > jugador4.aciertos)
+            if (jugadormax.aciertos >= jugadoractual.aciertos)
             {
-                return $"GANO juan {jugador3.nombre}";
-            }
-            if (jugador4.aciertos > jugador2.aciertos && jugador4.aciertos > jugador3.aciertos && jugador4.aciertos > jugador1.aciertos)
-            {
-                return $"GANO carlos {jugador4.nombre}";
+                return jugadormax;
             }
             else
             {
-                return "empate";
+                return null;
             }
-
         }
 
         // Juego disponible
         public override bool Disponible => true;
 
         // Cuantos jugadores comparten la partida
-        public override int CantidadJugadores => 4;
+        public override int CantidadJugadores => 2;
 
         // Sin tiempo limite: lo importante es quien junta mas pares
         public override Nivel[] Niveles => Nivel.TamanosEstandar;
