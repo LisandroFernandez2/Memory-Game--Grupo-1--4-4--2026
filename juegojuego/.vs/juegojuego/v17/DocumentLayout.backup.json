@@ -1,0 +1,150 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|c:\\users\\kevin\\onedrive\\desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\modocontrarreloj.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|solutionrelative:juegojuego\\modosdejuego\\modocontrarreloj.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|c:\\users\\kevin\\onedrive\\desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\modoclasico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|solutionrelative:juegojuego\\modosdejuego\\modoclasico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|c:\\users\\kevin\\onedrive\\desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\modosupervivencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|solutionrelative:juegojuego\\modosdejuego\\modosupervivencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|c:\\users\\kevin\\onedrive\\desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\puntaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|solutionrelative:juegojuego\\modelos\\puntaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|c:\\users\\kevin\\onedrive\\desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\jugador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|solutionrelative:juegojuego\\modelos\\jugador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|c:\\users\\kevin\\onedrive\\desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\catalogomodos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|solutionrelative:juegojuego\\modelos\\catalogomodos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|c:\\users\\kevin\\onedrive\\desktop\\c# en clases\\juegojuego\\juegojuego\\estructuras\\tablarecords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|solutionrelative:juegojuego\\estructuras\\tablarecords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|c:\\users\\kevin\\onedrive\\desktop\\c# en clases\\juegojuego\\juegojuego\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EC4CDE0-125F-4743-A85E-899BE8918DCF}|juegojuego\\juegojuego.csproj|solutionrelative:juegojuego\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ModoContrarreloj.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\ModoContrarreloj.cs",
+              "RelativeDocumentMoniker": "juegojuego\\modosdejuego\\ModoContrarreloj.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\ModoContrarreloj.cs*",
+              "RelativeToolTip": "juegojuego\\modosdejuego\\ModoContrarreloj.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-27T14:23:05.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ModoSupervivencia.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\ModoSupervivencia.cs",
+              "RelativeDocumentMoniker": "juegojuego\\modosdejuego\\ModoSupervivencia.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\ModoSupervivencia.cs",
+              "RelativeToolTip": "juegojuego\\modosdejuego\\ModoSupervivencia.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-27T14:16:52.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Game1.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\Game1.cs",
+              "RelativeDocumentMoniker": "juegojuego\\Game1.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\Game1.cs",
+              "RelativeToolTip": "juegojuego\\Game1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQDAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-26T19:39:21.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TablaRecords.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\estructuras\\TablaRecords.cs",
+              "RelativeDocumentMoniker": "juegojuego\\estructuras\\TablaRecords.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\estructuras\\TablaRecords.cs",
+              "RelativeToolTip": "juegojuego\\estructuras\\TablaRecords.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T19:44:08.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CatalogoModos.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\CatalogoModos.cs",
+              "RelativeDocumentMoniker": "juegojuego\\modelos\\CatalogoModos.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\CatalogoModos.cs",
+              "RelativeToolTip": "juegojuego\\modelos\\CatalogoModos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T19:44:01.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Jugador.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\Jugador.cs",
+              "RelativeDocumentMoniker": "juegojuego\\modelos\\Jugador.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\Jugador.cs",
+              "RelativeToolTip": "juegojuego\\modelos\\Jugador.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T19:43:57.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Puntaje.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\Puntaje.cs",
+              "RelativeDocumentMoniker": "juegojuego\\modelos\\Puntaje.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modelos\\Puntaje.cs",
+              "RelativeToolTip": "juegojuego\\modelos\\Puntaje.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T19:42:51.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ModoClasico.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\ModoClasico.cs",
+              "RelativeDocumentMoniker": "juegojuego\\modosdejuego\\ModoClasico.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Desktop\\c# en clases\\juegojuego\\juegojuego\\modosdejuego\\ModoClasico.cs",
+              "RelativeToolTip": "juegojuego\\modosdejuego\\ModoClasico.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T17:59:01.481Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
