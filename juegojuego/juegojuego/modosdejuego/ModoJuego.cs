@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-
+using Microsoft.Xna.Framework;
 namespace juegojuego
 {
     // Un MODO DE JUEGO son las REGLAS con las que se juega: cuantos jugadores hay, si hay tiempo limite,
@@ -45,6 +45,8 @@ namespace juegojuego
 
         // true = al ganar, el puntaje se guarda en la tabla de mejores puntajes
         public virtual bool GuardaRecords => true;
+
+
 
         // Recibe: tematica la tematica elegida (Modo)
         // Devuelve: solo los niveles del modo que se pueden jugar con esa tematica
@@ -93,6 +95,9 @@ namespace juegojuego
 
         // Lineas extra que se ven arriba a la izquierda debajo del tiempo ej: TURNO JUGADOR 1 o VIDAS 3. Poner 2 como maximo
         public virtual string[] LineasInfo(Partida partida) => Array.Empty<string>();
+
+        // Color de cada linea extra (el indice es la posicion en LineasInfo). Por defecto dorado
+        public virtual Color ColorLineaInfo(Partida partida, int indice) => Color.Gold;
 
         // Titulo del cartel cuando se gana ej: GANO JUGADOR 2
         public virtual string TituloVictoria(Partida partida) => "GANASTE!";

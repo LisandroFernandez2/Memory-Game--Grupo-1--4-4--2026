@@ -1,4 +1,6 @@
-﻿using System;
+﻿using juegojuego;
+using juegojuego.modelos;
+using System;
 using System.Collections.Generic;
 
 namespace juegojuego
@@ -35,6 +37,10 @@ namespace juegojuego
         // Mide el tiempo de la partida
         public Cronometro Cronometro { get; } = new Cronometro();
 
+        // Vidas del jugador (solo se usan en el modo Supervivencia)
+        public Vidas Vidas { get; set; } = new Vidas();
+
+
         // Primera carta que se dio vuelta en el intento actual null si todavia no se eligio ninguna
         private carta primeraSeleccion;
         // Segunda carta del intento actual
@@ -63,6 +69,10 @@ namespace juegojuego
             Tablero = new tablero(nivel.Filas, nivel.Columnas);
             // Llena el tablero con cartas mezcladas al azar
             GeneradorTablero.GenerarTablero(Tablero, fabricarSprites);
+
+            // >>> NUEVO: si el nivel es de supervivencia, el jugador arranca con las vidas del nivel
+            if (nivel is NivelSupervivencia supervivencia)
+                Vidas.vidas = supervivencia.vidas;
 
             // Contadores en 0 y cronometro andando
             Contador.Reiniciar();
@@ -137,6 +147,7 @@ namespace juegojuego
             else
             {
                 // FALLO: bloquea los clicks hasta que se tapen las dos cartas
+                // (las vidas las resta el modo de juego en AlCompletarIntento, no se toca aca)
                 EsperandoOcultarPorFallo = true; // se ocultarán al procesar los eventos encolados
                 Eventos.Encolar(new EventoVolteo(primeraSeleccion.fila, primeraSeleccion.columna, TipoEvento.Ocultar));
                 Eventos.Encolar(new EventoVolteo(segundaSeleccion.fila, segundaSeleccion.columna, TipoEvento.Ocultar));

@@ -7,16 +7,10 @@ namespace juegojuego
     public class ModoNivelCronometro : ModoJuego
     {
         public ModoNivelCronometro()
-            : this("Nivel Cronometro", "Encontra todos los pares antes de que se acabe el tiempo")
+            : base("Nivel Cronometro", "Encontra todos los pares antes de que se acabe el tiempo")
         {
         }
 
-        // Para los modos que quieren reutilizar el cronometro y los niveles de este modo con otro nombre
-        // (ej: ModoCooperativo hereda de esta clase)
-        public ModoNivelCronometro(string nombre, string descripcion)
-            : base(nombre, descripcion)
-        {
-        }
 
         // Los 6 niveles de siempre, cada uno con su tiempo limite
         public override NivelCronometro[] Niveles => NivelCronometro.Estandar;

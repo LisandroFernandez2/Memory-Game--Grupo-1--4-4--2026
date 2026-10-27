@@ -1,3 +1,5 @@
+using System;
+
 namespace juegojuego
 {
     // MODO CONTRARRELOJ (todavia no disponible): cada par que se encuentra regala tiempo extra,
@@ -15,11 +17,44 @@ namespace juegojuego
             : base("Contrarreloj", "Cada par que encontras te regala tiempo extra")
         {
         }
+        private int _tiempoExtra;
 
+        public override void AlEmpezarJuego() => _tiempoExtra = 0;
+
+        public override void AlCompletarIntento(Partida partida, bool acierto)
+        {
+            NivelCronometro nivel = partida.NivelActual as NivelCronometro;
+            if (acierto)
+            {
+                _tiempoExtra += 5;
+                nivel.TiempoLimiteSegundos = nivel.TiempoLimiteSegundos + _tiempoExtra;
+            }
+        }
+
+        public override bool Perdio(Partida partida)
+        {
+            NivelCronometro nivel = partida.NivelActual as NivelCronometro;
+            return nivel != null && partida.Cronometro.SeAgotoElTiempo(nivel.TiempoLimiteSegundos);
+        }
+
+        // Cuenta regresiva: TIEMPO mm:ss
+        public override string TextoTiempo(Partida partida)
+        {
+            int restante = SegundosRestantes(partida);
+            return $"TIEMPO {restante / 60:00}:{restante % 60:00}";
+        }
+        private static int SegundosRestantes(Partida partida)
+        {
+            NivelCronometro nivel = partida.NivelActual as NivelCronometro;
+            int limite = nivel != null ? nivel.TiempoLimiteSegundos : 0;
+            return Math.Max(0, limite - partida.Cronometro.SegundosTranscurridos);
+        }
+        // El tiempo se pone rojo en los ultimos 10 segundos
+        public override bool TiempoUrgente(Partida partida) => SegundosRestantes(partida) <= 10;
         // Todavia no se puede elegir: aparece en la lista como PROXIMAMENTE
         public override bool Disponible => true;
 
         // Niveles con tiempo limite inicial
-        public override NivelCronometro[] Niveles => NivelCronometro.Estandar;
+        public override Nivel[] Niveles => NivelCronometro.cronometros;
     }
 }

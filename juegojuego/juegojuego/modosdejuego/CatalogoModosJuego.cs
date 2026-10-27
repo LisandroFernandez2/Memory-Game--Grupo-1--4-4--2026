@@ -25,7 +25,6 @@ namespace juegojuego
             new ModoClasico(),
             new ModoInfinito(),
             new ModoMultijugador(),
-            new ModoCooperativo(),
             new ModoContrarreloj(),
             new ModoSupervivencia(),
         };

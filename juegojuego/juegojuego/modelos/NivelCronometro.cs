@@ -36,8 +36,22 @@ namespace juegojuego
         // 9x10 = 90 cartas = 45 pares 220 s
         public static NivelCronometro Imposible = new NivelCronometro("Imposible", 9, 10, 220);
 
+        public static NivelCronometro Muy_Facilc = new NivelCronometro("Muy Facil", 4, 4, 50);
+        // 4x5 = 20 cartas = 10 pares 90 s
+        public static NivelCronometro Facilc = new NivelCronometro("Facil", 4, 5, 60);
+        // 6x6 = 36 cartas = 18 pares 90 s
+        public static NivelCronometro Normalc = new NivelCronometro("Normal", 6, 6, 70);
+        // 7x8 = 56 cartas = 28 pares 150 s
+        public static NivelCronometro Dificilc = new NivelCronometro("Dificil", 7, 8, 80);
+        // 8x9 = 72 cartas = 36 pares 170 s
+        public static NivelCronometro MuyDificilc = new NivelCronometro("Muy Dificil", 8, 9, 90);
+        // 9x10 = 90 cartas = 45 pares 220 s
+        public static NivelCronometro Imposiblec = new NivelCronometro("Imposible", 9, 10, 100);
+
         // Los 6 niveles de siempre, en orden. Es la lista que ofrece el modo Nivel Cronometro
         // (tiene que ir DESPUES de los niveles de arriba)
         public static NivelCronometro[] Estandar = { Muy_Facil, Facil, Normal, Dificil, MuyDificil, Imposible };
+
+        public static NivelCronometro[] cronometros = { Muy_Facilc, Facilc, Normalc, Dificilc, MuyDificilc, Imposiblec };
     }
 }

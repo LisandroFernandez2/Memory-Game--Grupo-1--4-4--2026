@@ -779,10 +779,10 @@ namespace juegojuego
                 // Sin cronometro los intentos pasan a ser el dato grande
                 Texto(intentos, 20, 20, 4, Color.White);
             }
-            // Lineas extra del modo (ej: TURNO JUGADOR 1 o VIDAS 3)
-            foreach (string linea in _modoJuego.LineasInfo(_partida))
+            string[] lineasInfo = _modoJuego.LineasInfo(_partida);
+            for (int i = 0; i < lineasInfo.Length; i++)
             {
-                Texto(linea, 20, yLinea, 2, Color.Gold);
+                Texto(lineasInfo[i], 20, yLinea, 2, _modoJuego.ColorLineaInfo(_partida, i));
                 yLinea += 22;
             }
             // Pares encontrados / pares totales del nivel pegado a la derecha
