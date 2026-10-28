@@ -22,7 +22,7 @@ namespace juegojuego
         // Jugadores de la partida: 1 en solitario, 2 o mas en los modos multijugador
         public List<Jugador> Jugadores { get; } = new List<Jugador>();
         // Posicion en la lista Jugadores del jugador al que le toca jugar
-        public int TurnoActual { get; private set; }
+        public int TurnoActual { get; set; }
         // El jugador al que le toca jugar ahora
         public Jugador JugadorActual => Jugadores[TurnoActual];
 
@@ -117,7 +117,7 @@ namespace juegojuego
         // Recibe: nada usa las dos cartas elegidas
         // Devuelve: siempre true porque el intento ya termino
         // Como funciona: compara las cartas guarda el intento y actualiza el contador la lista y la cola
-        private bool VerificarPar()
+        public bool VerificarPar()
         {
             // Hay acierto si las dos cartas tienen el mismo idValor
             bool acierto = primeraSeleccion.idValor == segundaSeleccion.idValor;

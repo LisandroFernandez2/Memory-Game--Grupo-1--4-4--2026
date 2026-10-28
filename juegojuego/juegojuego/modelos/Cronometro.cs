@@ -10,7 +10,7 @@ namespace juegojuego
     public class Cronometro
     {
         // El Stopwatch cronometro de NET que hace el trabajo real
-        private readonly Stopwatch reloj = new Stopwatch();
+        public readonly Stopwatch reloj = new Stopwatch();
 
         // Recibe: nada Devuelve: nada
         // Empieza a contar desde cero

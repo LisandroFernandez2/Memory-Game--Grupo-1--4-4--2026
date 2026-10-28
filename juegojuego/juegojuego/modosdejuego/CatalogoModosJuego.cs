@@ -18,14 +18,11 @@ namespace juegojuego
     {
         public static readonly ModoJuego[] Todos =
         {
-            // El juego de siempre: elegir dificultad y ganar antes de que se acabe el tiempo
-            new ModoNivelCronometro(),
-
-            // Modos preparados pero todavia sin terminar (Disponible = false)
             new ModoClasico(),
+            new ModoCronometro(),
+            new ModoContrarreloj(),
             new ModoInfinito(),
             new ModoMultijugador(),
-            new ModoContrarreloj(),
             new ModoSupervivencia(),
         };
 

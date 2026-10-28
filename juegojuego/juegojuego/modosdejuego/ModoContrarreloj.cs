@@ -43,7 +43,7 @@ namespace juegojuego
             int restante = SegundosRestantes(partida);
             return $"TIEMPO {restante / 60:00}:{restante % 60:00}";
         }
-        private static int SegundosRestantes(Partida partida)
+        public static int SegundosRestantes(Partida partida)
         {
             NivelCronometro nivel = partida.NivelActual as NivelCronometro;
             int limite = nivel != null ? nivel.TiempoLimiteSegundos : 0;

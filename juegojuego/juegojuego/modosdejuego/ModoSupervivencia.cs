@@ -9,7 +9,7 @@ namespace juegojuego
     public class ModoSupervivencia : ModoJuego
     {
         public ModoSupervivencia()
-            : base("Supervivencia", "Tenes 3 vidas: cada intento fallido te quita una")
+            : base("Supervivencia", "Tenes una cantidad limitada vidas: cada intento fallido te quita una")
         {
         }
 

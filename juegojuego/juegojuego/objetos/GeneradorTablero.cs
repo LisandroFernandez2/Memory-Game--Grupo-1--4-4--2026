@@ -13,7 +13,7 @@ namespace juegojuego
     public static class GeneradorTablero
     {
         // Generador de numeros al azar
-        private static readonly Random rng = new Random();
+        public static readonly Random rng = new Random();
 
         // Genera y coloca las cartas dentro del tablero de forma recursiva.
         // Recibe: t el tablero vacio y fabricarSprites funcion que recibe el valor de una carta y devuelve sus sprites cubierta/descubierta
