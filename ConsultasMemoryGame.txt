@@ -1,0 +1,30 @@
+1. Top 5 mejores puntuaciones (Leaderboard)
+SELECT jugador_id, puntuacion FROM partida WHERE gano = 1 ORDER BY puntuacion DESC LIMIT 5;
+
+2. El tiempo más rápido en el Nivel 1
+SELECT jugador_id, tiempo_segundos FROM partida WHERE nivel_id = 1 AND gano = 1 ORDER BY tiempo_segundos ASC LIMIT 1;
+
+3. Ver el tablero de la Partida 1
+SELECT fila, columna, id_valor, esta_emparejada FROM carta WHERE partida_id = 1;
+
+4. Parejas ya encontradas en la Partida 1
+sql
+SELECT id_valor FROM par_descubierto WHERE partida_id = 1;
+
+5. Total de victorias y puntos de un jugador (Ej: ID 1)
+SELECT COUNT(*), SUM(puntuacion) FROM partida WHERE jugador_id = 1 AND gano = 1;
+
+6. Movimientos realizados en la Partida 1
+SELECT fila1, columna1, fila2, columna2, acierto FROM movimiento WHERE partida_id = 1;
+
+7. Temática más jugada (Top 3)
+SELECT tematica_id, COUNT(*) FROM partida GROUP BY tematica_id ORDER BY COUNT(*) DESC LIMIT 3;
+
+8. Partidas perdidas por cada Nivel
+SELECT nivel_id, COUNT(*) FROM partida WHERE gano = 0 GROUP BY nivel_id;
+
+9. Partidas jugadas el día de hoy
+SELECT * FROM partida WHERE DATE(fecha) = CURDATE();
+
+10. Buscar trampas (Partidas ganadas en menos de 5 segundos)
+SELECT id, jugador_id FROM partida WHERE gano = 1 AND tiempo_segundos < 5;
