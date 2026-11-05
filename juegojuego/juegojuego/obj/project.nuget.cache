@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "dgSpecHash": "IDa7uV3ey/A=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\juegojuego.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.11\\microsoft.entityframeworkcore.8.0.11.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.11\\microsoft.entityframeworkcore.abstractions.8.0.11.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.11\\microsoft.entityframeworkcore.analyzers.8.0.11.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.2\\microsoft.entityframeworkcore.relational.8.0.2.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.1\\microsoft.extensions.caching.memory.8.0.1.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.1\\microsoft.extensions.dependencyinjection.8.0.1.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.logging\\8.0.1\\microsoft.extensions.logging.8.0.1.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\monogame.content.builder.task\\3.8.6.1\\monogame.content.builder.task.3.8.6.1.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\monogame.framework.native\\3.8.5.1\\monogame.framework.native.3.8.5.1.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\monogame.runtime.linux.vulkan\\3.8.5.1\\monogame.runtime.linux.vulkan.3.8.5.1.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\monogame.runtime.mac.vulkan\\3.8.5.1\\monogame.runtime.mac.vulkan.3.8.5.1.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\monogame.runtime.windows.vulkan\\3.8.5.1\\monogame.runtime.windows.vulkan.3.8.5.1.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\mysqlconnector\\2.3.5\\mysqlconnector.2.3.5.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\8.0.2\\pomelo.entityframeworkcore.mysql.8.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
