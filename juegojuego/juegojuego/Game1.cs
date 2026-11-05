@@ -1113,7 +1113,7 @@ namespace juegojuego
 
                 string json = JsonSerializer.Serialize(datos, opciones);
 
-                File.WriteAllText("datos_juego_aguante_boca.json", json);
+                File.WriteAllText("Datos JSON guardados", json);
             }
         }
     }
