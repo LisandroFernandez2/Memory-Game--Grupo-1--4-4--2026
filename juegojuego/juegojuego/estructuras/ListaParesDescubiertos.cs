@@ -76,5 +76,10 @@ namespace juegojuego
                 total += par.Puntos;
             return total;
         }
+
+        public IEnumerable<ParDescubierto> ObtenerPares()
+        {
+            return pares;
+        }
     }
 }

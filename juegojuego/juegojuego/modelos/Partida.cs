@@ -64,7 +64,7 @@ namespace juegojuego
                 Jugadores.Add(new Jugador(nombreJugador));
             else
                 for (int i = 1; i <= cantidadJugadores; i++)
-                    Jugadores.Add(new Jugador($"JUGADOR {i}"));
+                    Jugadores.Add(new Jugador(i == 1 ? nombreJugador : $"JUGADOR {i}"));
             // Crea el tablero vacio con el tamano del nivel
             Tablero = new tablero(nivel.Filas, nivel.Columnas);
             // Llena el tablero con cartas mezcladas al azar

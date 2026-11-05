@@ -2,7 +2,7 @@ using Microsoft.Xna.Framework;
 
 namespace juegojuego
 {
-    // MODO MULTIJUGADOR: 2 jugadores por turnos en la misma computadora.
+    // MODO MULTIJUGADOR: de 2 a 4 jugadores por turnos en la misma computadora (la cantidad se elige en Game1).
     // Si un jugador acierta sigue jugando; si falla le toca al otro. Gana quien encuentra mas pares.
     public class ModoMultijugador : ModoJuego
     {
@@ -10,7 +10,7 @@ namespace juegojuego
         private static readonly Color[] Colores = { Color.DeepSkyBlue, Color.OrangeRed, Color.LimeGreen, Color.Yellow };
 
         public ModoMultijugador()
-            : base("Multijugador", "2,3 0 4 jugadores por turnos: gana quien encuentra mas pares")
+            : base("Multijugador", "2 a 4 jugadores por turnos: gana quien encuentra mas pares")
         {
         }
 
@@ -43,7 +43,7 @@ namespace juegojuego
             return Colores[indice % Colores.Length];
         }
 
-        // Muestra el ganador de la partida, el tiempo y los intentos
+        // Muestra el ganador de la partida o EMPATE si dos o mas jugadores terminaron con la misma cantidad maxima de pares
         public override string TituloVictoria(Partida partida)
         {
             Jugador jugador_gan = ganador(partida);
@@ -51,35 +51,38 @@ namespace juegojuego
             {
                 return $"GANO {jugador_gan.nombre}";
             }
-            return "empate";
+            return "EMPATE";
         }
 
+        // Devuelve: el jugador con mas pares, o null si hay empate en el primer puesto
         public Jugador ganador(Partida partida)
         {
-            Jugador jugadoractual = partida.Jugadores[0];
-            Jugador jugadormax = partida.Jugadores[0];
-            for (int i = 0; i <= partida.Jugadores.Count - 1; i++)
+            // El mejor jugador que se vio hasta ahora y si otro jugador lo iguala
+            Jugador mejor = partida.Jugadores[0];
+            bool empate = false;
+
+            for (int i = 1; i < partida.Jugadores.Count; i++)
             {
-                jugadoractual = partida.Jugadores[i];
-                if (jugadormax.aciertos < jugadoractual.aciertos)
+                Jugador j = partida.Jugadores[i];
+                if (j.aciertos > mejor.aciertos)
                 {
-                    jugadormax = jugadoractual;
+                    // Hay un nuevo mejor: el empate anterior ya no cuenta
+                    mejor = j;
+                    empate = false;
+                }
+                else if (j.aciertos == mejor.aciertos)
+                {
+                    empate = true;
                 }
             }
-            if (jugadormax.aciertos >= jugadoractual.aciertos)
-            {
-                return jugadormax;
-            }
-            else
-            {
-                return null;
-            }
+
+            return empate ? null : mejor;
         }
 
         // Juego disponible
         public override bool Disponible => true;
 
-        // Cuantos jugadores comparten la partida
+        // Cuantos jugadores comparten la partida por defecto (Game1 deja elegir de 2 a 4 en este modo)
         public override int CantidadJugadores => 2;
 
         // Sin tiempo limite: lo importante es quien junta mas pares

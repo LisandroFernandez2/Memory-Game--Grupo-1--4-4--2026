@@ -1,0 +1,473 @@
+{
+  "Jugadores": [
+    {
+      "ID": 1,
+      "Nombre": "POPEYE"
+    },
+    {
+      "ID": 2,
+      "Nombre": "EEEE"
+    }
+  ],
+  "ModosJuego": [
+    {
+      "ID": 1,
+      "nombre": "Multijugador",
+      "descripcion": "2,3 0 4 jugadores por turnos: gana quien encuentra mas pares",
+      "disponible": true,
+      "cantidad_jugadores": 2,
+      "guarda_records": false
+    }
+  ],
+  "Niveles": [
+    {
+      "ID": 1,
+      "Modo_juego_id": 1,
+      "Nombre": "Facil",
+      "Filas": 4,
+      "Columnas": 5,
+      "Pares": 10,
+      "Tiempo_limite": null,
+      "Vidas": null
+    }
+  ],
+  "Partidas": [
+    {
+      "ID": 1,
+      "Jugador_id": 1,
+      "Nivel_id": 1,
+      "Tematica_id": 3,
+      "Fecha": "2026-11-05T09:20:42",
+      "Intentos": 16,
+      "Aciertos": 10,
+      "Fallos": 6,
+      "Tiempo_segundos": 39,
+      "Puntuacion": 1201,
+      "Gano": 1
+    }
+  ],
+  "Cartas": [
+    {
+      "ID": 1,
+      "partida_id": 1,
+      "fila": 0,
+      "columna": 2,
+      "id_valor": 0,
+      "esta_descubierta": 1,
+      "esta_emparejada": 1
+    },
+    {
+      "ID": 2,
+      "partida_id": 1,
+      "fila": 1,
+      "columna": 3,
+      "id_valor": 0,
+      "esta_descubierta": 1,
+      "esta_emparejada": 1
+    },
+    {
+      "ID": 3,
+      "partida_id": 1,
+      "fila": 2,
+      "columna": 9,
+      "id_valor": 0,
+      "esta_descubierta": 1,
+      "esta_emparejada": 1
+    },
+    {
+      "ID": 4,
+      "partida_id": 1,
+      "fila": 3,
+      "columna": 9,
+      "id_valor": 0,
+      "esta_descubierta": 1,
+      "esta_emparejada": 1
+    },
+    {
+      "ID": 5,
+      "partida_id": 1,
+      "fila": 4,
+      "columna": 2,
+      "id_valor": 0,
+      "esta_descubierta": 1,
+      "esta_emparejada": 1
+    },
+    {
+      "ID": 6,
+      "partida_id": 1,
+      "fila": 0,
+      "columna": 8,
+      "id_valor": 1,
+      "esta_descubierta": 1,
+      "esta_emparejada": 1
+    },
+    {
+      "ID": 7,
+      "partida_id": 1,
+      "fila": 1,
+      "columna": 6,
+      "id_valor": 1,
+      "esta_descubierta": 1,
+      "esta_emparejada": 1
+    },
+    {
+      "ID": 8,
+      "partida_id": 1,
+      "fila": 2,
+      "columna": 5,
+      "id_valor": 1,
+      "esta_descubierta": 1,
+      "esta_emparejada": 1
+    },
+    {
+      "ID": 9,
+      "partida_id": 1,
+      "fila": 3,
+      "columna": 1,
+      "id_valor": 1,
+      "esta_descubierta": 1,
+      "esta_emparejada": 1
+    },
+    {
+      "ID": 10,
+      "partida_id": 1,
+      "fila": 4,
+      "columna": 3,
+      "id_valor": 1,
+      "esta_descubierta": 1,
+      "esta_emparejada": 1
+    },
+    {
+      "ID": 11,
+      "partida_id": 1,
+      "fila": 0,
+      "columna": 7,
+      "id_valor": 2,
+      "esta_descubierta": 1,
+      "esta_emparejada": 1
+    },
+    {
+      "ID": 12,
+      "partida_id": 1,
+      "fila": 1,
+      "columna": 1,
+      "id_valor": 2,
+      "esta_descubierta": 1,
+      "esta_emparejada": 1
+    },
+    {
+      "ID": 13,
+      "partida_id": 1,
+      "fila": 2,
+      "columna": 4,
+      "id_valor": 2,
+      "esta_descubierta": 1,
+      "esta_emparejada": 1
+    },
+    {
+      "ID": 14,
+      "partida_id": 1,
+      "fila": 3,
+      "columna": 5,
+      "id_valor": 2,
+      "esta_descubierta": 1,
+      "esta_emparejada": 1
+    },
+    {
+      "ID": 15,
+      "partida_id": 1,
+      "fila": 4,
+      "columna": 7,
+      "id_valor": 2,
+      "esta_descubierta": 1,
+      "esta_emparejada": 1
+    },
+    {
+      "ID": 16,
+      "partida_id": 1,
+      "fila": 0,
+      "columna": 0,
+      "id_valor": 3,
+      "esta_descubierta": 1,
+      "esta_emparejada": 1
+    },
+    {
+      "ID": 17,
+      "partida_id": 1,
+      "fila": 1,
+      "columna": 6,
+      "id_valor": 3,
+      "esta_descubierta": 1,
+      "esta_emparejada": 1
+    },
+    {
+      "ID": 18,
+      "partida_id": 1,
+      "fila": 2,
+      "columna": 8,
+      "id_valor": 3,
+      "esta_descubierta": 1,
+      "esta_emparejada": 1
+    },
+    {
+      "ID": 19,
+      "partida_id": 1,
+      "fila": 3,
+      "columna": 4,
+      "id_valor": 3,
+      "esta_descubierta": 1,
+      "esta_emparejada": 1
+    },
+    {
+      "ID": 20,
+      "partida_id": 1,
+      "fila": 4,
+      "columna": 0,
+      "id_valor": 3,
+      "esta_descubierta": 1,
+      "esta_emparejada": 1
+    }
+  ],
+  "Movimientos": [
+    {
+      "ID": 1,
+      "partida_id": 1,
+      "fila1": 0,
+      "columna1": 0,
+      "fila2": 4,
+      "columna2": 0,
+      "acierto": 1,
+      "momento": "2026-11-05T09:20:42"
+    },
+    {
+      "ID": 2,
+      "partida_id": 1,
+      "fila1": 3,
+      "columna1": 0,
+      "fila2": 2,
+      "columna2": 0,
+      "acierto": 1,
+      "momento": "2026-11-05T09:20:42"
+    },
+    {
+      "ID": 3,
+      "partida_id": 1,
+      "fila1": 3,
+      "columna1": 1,
+      "fila2": 1,
+      "columna2": 2,
+      "acierto": 1,
+      "momento": "2026-11-05T09:20:42"
+    },
+    {
+      "ID": 4,
+      "partida_id": 1,
+      "fila1": 4,
+      "columna1": 1,
+      "fila2": 1,
+      "columna2": 0,
+      "acierto": 1,
+      "momento": "2026-11-05T09:20:42"
+    },
+    {
+      "ID": 5,
+      "partida_id": 1,
+      "fila1": 4,
+      "columna1": 2,
+      "fila2": 0,
+      "columna2": 2,
+      "acierto": 1,
+      "momento": "2026-11-05T09:20:42"
+    },
+    {
+      "ID": 6,
+      "partida_id": 1,
+      "fila1": 4,
+      "columna1": 3,
+      "fila2": 0,
+      "columna2": 3,
+      "acierto": 1,
+      "momento": "2026-11-05T09:20:42"
+    },
+    {
+      "ID": 7,
+      "partida_id": 1,
+      "fila1": 2,
+      "columna1": 2,
+      "fila2": 3,
+      "columna2": 3,
+      "acierto": 1,
+      "momento": "2026-11-05T09:20:42"
+    },
+    {
+      "ID": 8,
+      "partida_id": 1,
+      "fila1": 2,
+      "columna1": 1,
+      "fila2": 3,
+      "columna2": 2,
+      "acierto": 1,
+      "momento": "2026-11-05T09:20:42"
+    },
+    {
+      "ID": 9,
+      "partida_id": 1,
+      "fila1": 0,
+      "columna1": 2,
+      "fila2": 3,
+      "columna2": 2,
+      "acierto": 0,
+      "momento": "2026-11-05T09:20:42"
+    },
+    {
+      "ID": 10,
+      "partida_id": 1,
+      "fila1": 0,
+      "columna1": 3,
+      "fila2": 2,
+      "columna2": 1,
+      "acierto": 0,
+      "momento": "2026-11-05T09:20:42"
+    },
+    {
+      "ID": 11,
+      "partida_id": 1,
+      "fila1": 2,
+      "columna1": 3,
+      "fila2": 0,
+      "columna2": 1,
+      "acierto": 1,
+      "momento": "2026-11-05T09:20:42"
+    },
+    {
+      "ID": 12,
+      "partida_id": 1,
+      "fila1": 2,
+      "columna1": 1,
+      "fila2": 2,
+      "columna2": 2,
+      "acierto": 0,
+      "momento": "2026-11-05T09:20:42"
+    },
+    {
+      "ID": 13,
+      "partida_id": 1,
+      "fila1": 1,
+      "columna1": 3,
+      "fila2": 1,
+      "columna2": 1,
+      "acierto": 1,
+      "momento": "2026-11-05T09:20:42"
+    },
+    {
+      "ID": 14,
+      "partida_id": 1,
+      "fila1": 0,
+      "columna1": 2,
+      "fila2": 1,
+      "columna2": 2,
+      "acierto": 0,
+      "momento": "2026-11-05T09:20:42"
+    },
+    {
+      "ID": 15,
+      "partida_id": 1,
+      "fila1": 1,
+      "columna1": 1,
+      "fila2": 0,
+      "columna2": 1,
+      "acierto": 0,
+      "momento": "2026-11-05T09:20:42"
+    },
+    {
+      "ID": 16,
+      "partida_id": 1,
+      "fila1": 0,
+      "columna1": 0,
+      "fila2": 1,
+      "columna2": 0,
+      "acierto": 0,
+      "momento": "2026-11-05T09:20:42"
+    }
+  ],
+  "ParesDescubiertos": [
+    {
+      "ID": 1,
+      "Partida_id": 1,
+      "Id_valor": 6,
+      "Puntos": 100
+    },
+    {
+      "ID": 2,
+      "Partida_id": 1,
+      "Id_valor": 8,
+      "Puntos": 100
+    },
+    {
+      "ID": 3,
+      "Partida_id": 1,
+      "Id_valor": 5,
+      "Puntos": 100
+    },
+    {
+      "ID": 4,
+      "Partida_id": 1,
+      "Id_valor": 4,
+      "Puntos": 100
+    },
+    {
+      "ID": 5,
+      "Partida_id": 1,
+      "Id_valor": 0,
+      "Puntos": 100
+    },
+    {
+      "ID": 6,
+      "Partida_id": 1,
+      "Id_valor": 7,
+      "Puntos": 100
+    },
+    {
+      "ID": 7,
+      "Partida_id": 1,
+      "Id_valor": 3,
+      "Puntos": 100
+    },
+    {
+      "ID": 8,
+      "Partida_id": 1,
+      "Id_valor": 1,
+      "Puntos": 100
+    },
+    {
+      "ID": 9,
+      "Partida_id": 1,
+      "Id_valor": 9,
+      "Puntos": 100
+    },
+    {
+      "ID": 10,
+      "Partida_id": 1,
+      "Id_valor": 2,
+      "Puntos": 100
+    }
+  ],
+  "Records": [],
+  "Tematicas": [
+    {
+      "ID": 1,
+      "Nombre": "comun",
+      "Carpeta": "comun"
+    },
+    {
+      "ID": 2,
+      "Nombre": "modos",
+      "Carpeta": "modos"
+    },
+    {
+      "ID": 3,
+      "Nombre": "Mezcla",
+      "Carpeta": "Mezcla"
+    }
+  ]
+}

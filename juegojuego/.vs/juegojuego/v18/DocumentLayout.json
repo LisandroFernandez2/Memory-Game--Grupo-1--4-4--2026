@@ -1,0 +1,293 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\Game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:juegojuego\\Game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\modelos\\Partida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:juegojuego\\modelos\\Partida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\estructuras\\ListaParesDescubiertos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:juegojuego\\estructuras\\ListaParesDescubiertos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\estructuras\\HistorialMovimientos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:juegojuego\\estructuras\\HistorialMovimientos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\BaseDeDatos\\RecordDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:juegojuego\\BaseDeDatos\\RecordDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\modelos\\Puntaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:juegojuego\\modelos\\Puntaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\BaseDeDatos\\MovimientoDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:juegojuego\\BaseDeDatos\\MovimientoDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\objetos\\carta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:juegojuego\\objetos\\carta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\objetos\\GeneradorTablero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:juegojuego\\objetos\\GeneradorTablero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\BaseDeDatos\\CartaDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:juegojuego\\BaseDeDatos\\CartaDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\BaseDeDatos\\PartidaDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:juegojuego\\BaseDeDatos\\PartidaDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\modosdejuego\\ModoJuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:juegojuego\\modosdejuego\\ModoJuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\BaseDeDatos\\Modo_JuegoDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:juegojuego\\BaseDeDatos\\Modo_JuegoDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\modosdejuego\\CatalogoModosJuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:juegojuego\\modosdejuego\\CatalogoModosJuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\estructuras\\TablaRecords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:juegojuego\\estructuras\\TablaRecords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\BaseDeDatos\\AppDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:juegojuego\\BaseDeDatos\\AppDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\BaseDeDatos\\TematicaDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:juegojuego\\BaseDeDatos\\TematicaDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 16,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Partida.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\modelos\\Partida.cs",
+              "RelativeDocumentMoniker": "juegojuego\\modelos\\Partida.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\modelos\\Partida.cs",
+              "RelativeToolTip": "juegojuego\\modelos\\Partida.cs",
+              "ViewState": "AgIAAOoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T05:37:49.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RecordDB.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\BaseDeDatos\\RecordDB.cs",
+              "RelativeDocumentMoniker": "juegojuego\\BaseDeDatos\\RecordDB.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\BaseDeDatos\\RecordDB.cs",
+              "RelativeToolTip": "juegojuego\\BaseDeDatos\\RecordDB.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T05:00:54.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HistorialMovimientos.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\estructuras\\HistorialMovimientos.cs",
+              "RelativeDocumentMoniker": "juegojuego\\estructuras\\HistorialMovimientos.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\estructuras\\HistorialMovimientos.cs",
+              "RelativeToolTip": "juegojuego\\estructuras\\HistorialMovimientos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T04:56:59.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ListaParesDescubiertos.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\estructuras\\ListaParesDescubiertos.cs",
+              "RelativeDocumentMoniker": "juegojuego\\estructuras\\ListaParesDescubiertos.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\estructuras\\ListaParesDescubiertos.cs",
+              "RelativeToolTip": "juegojuego\\estructuras\\ListaParesDescubiertos.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAwFIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T04:55:54.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Puntaje.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\modelos\\Puntaje.cs",
+              "RelativeDocumentMoniker": "juegojuego\\modelos\\Puntaje.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\modelos\\Puntaje.cs",
+              "RelativeToolTip": "juegojuego\\modelos\\Puntaje.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAArwAoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T04:55:32.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MovimientoDB.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\BaseDeDatos\\MovimientoDB.cs",
+              "RelativeDocumentMoniker": "juegojuego\\BaseDeDatos\\MovimientoDB.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\BaseDeDatos\\MovimientoDB.cs",
+              "RelativeToolTip": "juegojuego\\BaseDeDatos\\MovimientoDB.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T04:54:15.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "carta.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\objetos\\carta.cs",
+              "RelativeDocumentMoniker": "juegojuego\\objetos\\carta.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\objetos\\carta.cs",
+              "RelativeToolTip": "juegojuego\\objetos\\carta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T04:40:58.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GeneradorTablero.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\objetos\\GeneradorTablero.cs",
+              "RelativeDocumentMoniker": "juegojuego\\objetos\\GeneradorTablero.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\objetos\\GeneradorTablero.cs",
+              "RelativeToolTip": "juegojuego\\objetos\\GeneradorTablero.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T04:50:28.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CartaDB.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\BaseDeDatos\\CartaDB.cs",
+              "RelativeDocumentMoniker": "juegojuego\\BaseDeDatos\\CartaDB.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\BaseDeDatos\\CartaDB.cs",
+              "RelativeToolTip": "juegojuego\\BaseDeDatos\\CartaDB.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T04:37:58.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TablaRecords.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\estructuras\\TablaRecords.cs",
+              "RelativeDocumentMoniker": "juegojuego\\estructuras\\TablaRecords.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\estructuras\\TablaRecords.cs",
+              "RelativeToolTip": "juegojuego\\estructuras\\TablaRecords.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T04:02:28.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\BaseDeDatos\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "juegojuego\\BaseDeDatos\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\BaseDeDatos\\AppDbContext.cs",
+              "RelativeToolTip": "juegojuego\\BaseDeDatos\\AppDbContext.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAArwA8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T03:40:19.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PartidaDB.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\BaseDeDatos\\PartidaDB.cs",
+              "RelativeDocumentMoniker": "juegojuego\\BaseDeDatos\\PartidaDB.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\BaseDeDatos\\PartidaDB.cs",
+              "RelativeToolTip": "juegojuego\\BaseDeDatos\\PartidaDB.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T03:39:52.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TematicaDB.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\BaseDeDatos\\TematicaDB.cs",
+              "RelativeDocumentMoniker": "juegojuego\\BaseDeDatos\\TematicaDB.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\BaseDeDatos\\TematicaDB.cs",
+              "RelativeToolTip": "juegojuego\\BaseDeDatos\\TematicaDB.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T00:17:21.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ModoJuego.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\modosdejuego\\ModoJuego.cs",
+              "RelativeDocumentMoniker": "juegojuego\\modosdejuego\\ModoJuego.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\modosdejuego\\ModoJuego.cs",
+              "RelativeToolTip": "juegojuego\\modosdejuego\\ModoJuego.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAADgvxQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T04:19:11.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Modo_JuegoDB.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\BaseDeDatos\\Modo_JuegoDB.cs",
+              "RelativeDocumentMoniker": "juegojuego\\BaseDeDatos\\Modo_JuegoDB.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\BaseDeDatos\\Modo_JuegoDB.cs",
+              "RelativeToolTip": "juegojuego\\BaseDeDatos\\Modo_JuegoDB.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T00:14:03.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CatalogoModosJuego.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\modosdejuego\\CatalogoModosJuego.cs",
+              "RelativeDocumentMoniker": "juegojuego\\modosdejuego\\CatalogoModosJuego.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\modosdejuego\\CatalogoModosJuego.cs",
+              "RelativeToolTip": "juegojuego\\modosdejuego\\CatalogoModosJuego.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAADgvx0AAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T06:04:57.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Game1.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\Game1.cs",
+              "RelativeDocumentMoniker": "juegojuego\\Game1.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\Memory-Game--Grupo-1--4-4--2026\\juegojuego\\juegojuego\\Game1.cs",
+              "RelativeToolTip": "juegojuego\\Game1.cs",
+              "ViewState": "AgIAAEkEAAAAAAAAAAAIwE4EAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T05:39:54.347Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
