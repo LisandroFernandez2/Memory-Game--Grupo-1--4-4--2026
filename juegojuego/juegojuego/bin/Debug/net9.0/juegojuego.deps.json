@@ -9,6 +9,7 @@
       "juegojuego/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.11",
+          "MonoGame.Content.Builder.Task": "3.8.6.1",
           "MonoGame.Framework.Native": "3.8.5.1",
           "MonoGame.Runtime.Linux.Vulkan": "3.8.5.1",
           "MonoGame.Runtime.Mac.Vulkan": "3.8.5.1",
@@ -22,6 +23,7 @@
       "Microsoft.EntityFrameworkCore/8.0.11": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Abstractions": "8.0.11",
+          "Microsoft.EntityFrameworkCore.Analyzers": "8.0.11",
           "Microsoft.Extensions.Caching.Memory": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1"
         },
@@ -40,6 +42,7 @@
           }
         }
       },
+      "Microsoft.EntityFrameworkCore.Analyzers/8.0.11": {},
       "Microsoft.EntityFrameworkCore.Relational/8.0.2": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.11",
@@ -152,6 +155,7 @@
           }
         }
       },
+      "MonoGame.Content.Builder.Task/3.8.6.1": {},
       "MonoGame.Framework.Native/3.8.5.1": {
         "runtime": {
           "lib/netstandard2.1/MonoGame.Framework.dll": {
@@ -242,6 +246,13 @@
       "path": "microsoft.entityframeworkcore.abstractions/8.0.11",
       "hashPath": "microsoft.entityframeworkcore.abstractions.8.0.11.nupkg.sha512"
     },
+    "Microsoft.EntityFrameworkCore.Analyzers/8.0.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NI/AJQjtC7qgWM8Nr85sRkwlog2AnFer5RKP8xTUH0RuPF3nN0tGXBEeYJOLZWp+/+M/C6O7MMDRhKRE8bZwIA==",
+      "path": "microsoft.entityframeworkcore.analyzers/8.0.11",
+      "hashPath": "microsoft.entityframeworkcore.analyzers.8.0.11.nupkg.sha512"
+    },
     "Microsoft.EntityFrameworkCore.Relational/8.0.2": {
       "type": "package",
       "serviceable": true,
@@ -311,6 +322,13 @@
       "sha512": "sha512-bXJEZrW9ny8vjMF1JV253WeLhpEVzFo1lyaZu1vQ4ZxWUlVvknZ/+ftFgVheLubb4eZPSwwxBeqS1JkCOjxd8g==",
       "path": "microsoft.extensions.primitives/8.0.0",
       "hashPath": "microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+    },
+    "MonoGame.Content.Builder.Task/3.8.6.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wws1EDor7JEOfQ+YgpOznZyZsl3KD6hdbUG+OfIha6tWiKLwNkz4qPS5+stI5GMfwzuv0QiE32XemLOs7fBoNw==",
+      "path": "monogame.content.builder.task/3.8.6.1",
+      "hashPath": "monogame.content.builder.task.3.8.6.1.nupkg.sha512"
     },
     "MonoGame.Framework.Native/3.8.5.1": {
       "type": "package",

@@ -2,49 +2,31 @@
   "Jugadores": [
     {
       "ID": 1,
-      "Nombre": "LISANDRO"
+      "Nombre": "POPEYE"
     },
     {
       "ID": 2,
-      "Nombre": "LICHU"
+      "Nombre": "EEEE"
     }
   ],
   "ModosJuego": [
     {
       "ID": 1,
-      "nombre": "Clasico",
-      "descripcion": "Sin cronometro: jugas tranquilo hasta encontrar todos los pares",
+      "nombre": "Multijugador",
+      "descripcion": "2,3 0 4 jugadores por turnos: gana quien encuentra mas pares",
       "disponible": true,
-      "cantidad_jugadores": 1,
-      "guarda_records": true
-    },
-    {
-      "ID": 2,
-      "nombre": "Clasico",
-      "descripcion": "Sin cronometro: jugas tranquilo hasta encontrar todos los pares",
-      "disponible": true,
-      "cantidad_jugadores": 1,
-      "guarda_records": true
+      "cantidad_jugadores": 2,
+      "guarda_records": false
     }
   ],
   "Niveles": [
     {
       "ID": 1,
       "Modo_juego_id": 1,
-      "Nombre": "Muy Facil",
+      "Nombre": "Facil",
       "Filas": 4,
-      "Columnas": 4,
-      "Pares": 8,
-      "Tiempo_limite": null,
-      "Vidas": null
-    },
-    {
-      "ID": 2,
-      "Modo_juego_id": 1,
-      "Nombre": "Muy Facil",
-      "Filas": 4,
-      "Columnas": 4,
-      "Pares": 8,
+      "Columnas": 5,
+      "Pares": 10,
       "Tiempo_limite": null,
       "Vidas": null
     }
@@ -55,25 +37,12 @@
       "Jugador_id": 1,
       "Nivel_id": 1,
       "Tematica_id": 3,
-      "Fecha": "2026-11-05T02:19:28",
-      "Intentos": 15,
-      "Aciertos": 8,
-      "Fallos": 7,
-      "Tiempo_segundos": 34,
-      "Puntuacion": 996,
-      "Gano": 1
-    },
-    {
-      "ID": 2,
-      "Jugador_id": 2,
-      "Nivel_id": 1,
-      "Tematica_id": 3,
-      "Fecha": "2026-11-05T02:31:02",
-      "Intentos": 26,
-      "Aciertos": 8,
-      "Fallos": 18,
+      "Fecha": "2026-11-05T09:20:42",
+      "Intentos": 16,
+      "Aciertos": 10,
+      "Fallos": 6,
       "Tiempo_segundos": 39,
-      "Puntuacion": 881,
+      "Puntuacion": 1201,
       "Gano": 1
     }
   ],
@@ -82,7 +51,7 @@
       "ID": 1,
       "partida_id": 1,
       "fila": 0,
-      "columna": 4,
+      "columna": 2,
       "id_valor": 0,
       "esta_descubierta": 1,
       "esta_emparejada": 1
@@ -91,7 +60,7 @@
       "ID": 2,
       "partida_id": 1,
       "fila": 1,
-      "columna": 1,
+      "columna": 3,
       "id_valor": 0,
       "esta_descubierta": 1,
       "esta_emparejada": 1
@@ -100,7 +69,7 @@
       "ID": 3,
       "partida_id": 1,
       "fila": 2,
-      "columna": 7,
+      "columna": 9,
       "id_valor": 0,
       "esta_descubierta": 1,
       "esta_emparejada": 1
@@ -109,7 +78,7 @@
       "ID": 4,
       "partida_id": 1,
       "fila": 3,
-      "columna": 0,
+      "columna": 9,
       "id_valor": 0,
       "esta_descubierta": 1,
       "esta_emparejada": 1
@@ -117,17 +86,17 @@
     {
       "ID": 5,
       "partida_id": 1,
-      "fila": 0,
+      "fila": 4,
       "columna": 2,
-      "id_valor": 1,
+      "id_valor": 0,
       "esta_descubierta": 1,
       "esta_emparejada": 1
     },
     {
       "ID": 6,
       "partida_id": 1,
-      "fila": 1,
-      "columna": 2,
+      "fila": 0,
+      "columna": 8,
       "id_valor": 1,
       "esta_descubierta": 1,
       "esta_emparejada": 1
@@ -135,7 +104,7 @@
     {
       "ID": 7,
       "partida_id": 1,
-      "fila": 2,
+      "fila": 1,
       "columna": 6,
       "id_valor": 1,
       "esta_descubierta": 1,
@@ -144,8 +113,8 @@
     {
       "ID": 8,
       "partida_id": 1,
-      "fila": 3,
-      "columna": 0,
+      "fila": 2,
+      "columna": 5,
       "id_valor": 1,
       "esta_descubierta": 1,
       "esta_emparejada": 1
@@ -153,26 +122,26 @@
     {
       "ID": 9,
       "partida_id": 1,
-      "fila": 0,
+      "fila": 3,
       "columna": 1,
-      "id_valor": 2,
+      "id_valor": 1,
       "esta_descubierta": 1,
       "esta_emparejada": 1
     },
     {
       "ID": 10,
       "partida_id": 1,
-      "fila": 1,
+      "fila": 4,
       "columna": 3,
-      "id_valor": 2,
+      "id_valor": 1,
       "esta_descubierta": 1,
       "esta_emparejada": 1
     },
     {
       "ID": 11,
       "partida_id": 1,
-      "fila": 2,
-      "columna": 6,
+      "fila": 0,
+      "columna": 7,
       "id_valor": 2,
       "esta_descubierta": 1,
       "esta_emparejada": 1
@@ -180,8 +149,8 @@
     {
       "ID": 12,
       "partida_id": 1,
-      "fila": 3,
-      "columna": 5,
+      "fila": 1,
+      "columna": 1,
       "id_valor": 2,
       "esta_descubierta": 1,
       "esta_emparejada": 1
@@ -189,178 +158,70 @@
     {
       "ID": 13,
       "partida_id": 1,
-      "fila": 0,
+      "fila": 2,
       "columna": 4,
-      "id_valor": 3,
+      "id_valor": 2,
       "esta_descubierta": 1,
       "esta_emparejada": 1
     },
     {
       "ID": 14,
       "partida_id": 1,
-      "fila": 1,
-      "columna": 3,
-      "id_valor": 3,
+      "fila": 3,
+      "columna": 5,
+      "id_valor": 2,
       "esta_descubierta": 1,
       "esta_emparejada": 1
     },
     {
       "ID": 15,
       "partida_id": 1,
-      "fila": 2,
-      "columna": 5,
-      "id_valor": 3,
+      "fila": 4,
+      "columna": 7,
+      "id_valor": 2,
       "esta_descubierta": 1,
       "esta_emparejada": 1
     },
     {
       "ID": 16,
       "partida_id": 1,
-      "fila": 3,
-      "columna": 7,
+      "fila": 0,
+      "columna": 0,
       "id_valor": 3,
       "esta_descubierta": 1,
       "esta_emparejada": 1
     },
     {
       "ID": 17,
-      "partida_id": 2,
-      "fila": 0,
+      "partida_id": 1,
+      "fila": 1,
       "columna": 6,
-      "id_valor": 0,
+      "id_valor": 3,
       "esta_descubierta": 1,
       "esta_emparejada": 1
     },
     {
       "ID": 18,
-      "partida_id": 2,
-      "fila": 1,
-      "columna": 0,
-      "id_valor": 0,
+      "partida_id": 1,
+      "fila": 2,
+      "columna": 8,
+      "id_valor": 3,
       "esta_descubierta": 1,
       "esta_emparejada": 1
     },
     {
       "ID": 19,
-      "partida_id": 2,
-      "fila": 2,
+      "partida_id": 1,
+      "fila": 3,
       "columna": 4,
-      "id_valor": 0,
+      "id_valor": 3,
       "esta_descubierta": 1,
       "esta_emparejada": 1
     },
     {
       "ID": 20,
-      "partida_id": 2,
-      "fila": 3,
-      "columna": 6,
-      "id_valor": 0,
-      "esta_descubierta": 1,
-      "esta_emparejada": 1
-    },
-    {
-      "ID": 21,
-      "partida_id": 2,
-      "fila": 0,
-      "columna": 7,
-      "id_valor": 1,
-      "esta_descubierta": 1,
-      "esta_emparejada": 1
-    },
-    {
-      "ID": 22,
-      "partida_id": 2,
-      "fila": 1,
-      "columna": 5,
-      "id_valor": 1,
-      "esta_descubierta": 1,
-      "esta_emparejada": 1
-    },
-    {
-      "ID": 23,
-      "partida_id": 2,
-      "fila": 2,
-      "columna": 2,
-      "id_valor": 1,
-      "esta_descubierta": 1,
-      "esta_emparejada": 1
-    },
-    {
-      "ID": 24,
-      "partida_id": 2,
-      "fila": 3,
-      "columna": 5,
-      "id_valor": 1,
-      "esta_descubierta": 1,
-      "esta_emparejada": 1
-    },
-    {
-      "ID": 25,
-      "partida_id": 2,
-      "fila": 0,
-      "columna": 4,
-      "id_valor": 2,
-      "esta_descubierta": 1,
-      "esta_emparejada": 1
-    },
-    {
-      "ID": 26,
-      "partida_id": 2,
-      "fila": 1,
-      "columna": 3,
-      "id_valor": 2,
-      "esta_descubierta": 1,
-      "esta_emparejada": 1
-    },
-    {
-      "ID": 27,
-      "partida_id": 2,
-      "fila": 2,
-      "columna": 1,
-      "id_valor": 2,
-      "esta_descubierta": 1,
-      "esta_emparejada": 1
-    },
-    {
-      "ID": 28,
-      "partida_id": 2,
-      "fila": 3,
-      "columna": 2,
-      "id_valor": 2,
-      "esta_descubierta": 1,
-      "esta_emparejada": 1
-    },
-    {
-      "ID": 29,
-      "partida_id": 2,
-      "fila": 0,
-      "columna": 3,
-      "id_valor": 3,
-      "esta_descubierta": 1,
-      "esta_emparejada": 1
-    },
-    {
-      "ID": 30,
-      "partida_id": 2,
-      "fila": 1,
-      "columna": 1,
-      "id_valor": 3,
-      "esta_descubierta": 1,
-      "esta_emparejada": 1
-    },
-    {
-      "ID": 31,
-      "partida_id": 2,
-      "fila": 2,
-      "columna": 7,
-      "id_valor": 3,
-      "esta_descubierta": 1,
-      "esta_emparejada": 1
-    },
-    {
-      "ID": 32,
-      "partida_id": 2,
-      "fila": 3,
+      "partida_id": 1,
+      "fila": 4,
       "columna": 0,
       "id_valor": 3,
       "esta_descubierta": 1,
@@ -371,112 +232,112 @@
     {
       "ID": 1,
       "partida_id": 1,
-      "fila1": 2,
+      "fila1": 0,
       "columna1": 0,
-      "fila2": 3,
-      "columna2": 3,
+      "fila2": 4,
+      "columna2": 0,
       "acierto": 1,
-      "momento": "2026-11-05T02:19:28"
+      "momento": "2026-11-05T09:20:42"
     },
     {
       "ID": 2,
       "partida_id": 1,
-      "fila1": 1,
+      "fila1": 3,
       "columna1": 0,
-      "fila2": 0,
-      "columna2": 2,
+      "fila2": 2,
+      "columna2": 0,
       "acierto": 1,
-      "momento": "2026-11-05T02:19:28"
+      "momento": "2026-11-05T09:20:42"
     },
     {
       "ID": 3,
       "partida_id": 1,
-      "fila1": 0,
+      "fila1": 3,
       "columna1": 1,
       "fila2": 1,
-      "columna2": 1,
+      "columna2": 2,
       "acierto": 1,
-      "momento": "2026-11-05T02:19:28"
+      "momento": "2026-11-05T09:20:42"
     },
     {
       "ID": 4,
       "partida_id": 1,
-      "fila1": 0,
-      "columna1": 2,
+      "fila1": 4,
+      "columna1": 1,
       "fila2": 1,
-      "columna2": 1,
-      "acierto": 0,
-      "momento": "2026-11-05T02:19:28"
+      "columna2": 0,
+      "acierto": 1,
+      "momento": "2026-11-05T09:20:42"
     },
     {
       "ID": 5,
       "partida_id": 1,
-      "fila1": 1,
+      "fila1": 4,
       "columna1": 2,
-      "fila2": 1,
-      "columna2": 3,
+      "fila2": 0,
+      "columna2": 2,
       "acierto": 1,
-      "momento": "2026-11-05T02:19:28"
+      "momento": "2026-11-05T09:20:42"
     },
     {
       "ID": 6,
       "partida_id": 1,
-      "fila1": 0,
-      "columna1": 1,
+      "fila1": 4,
+      "columna1": 3,
       "fila2": 0,
-      "columna2": 2,
-      "acierto": 0,
-      "momento": "2026-11-05T02:19:28"
+      "columna2": 3,
+      "acierto": 1,
+      "momento": "2026-11-05T09:20:42"
     },
     {
       "ID": 7,
       "partida_id": 1,
-      "fila1": 0,
-      "columna1": 3,
-      "fila2": 0,
-      "columna2": 0,
+      "fila1": 2,
+      "columna1": 2,
+      "fila2": 3,
+      "columna2": 3,
       "acierto": 1,
-      "momento": "2026-11-05T02:19:28"
+      "momento": "2026-11-05T09:20:42"
     },
     {
       "ID": 8,
       "partida_id": 1,
-      "fila1": 3,
-      "columna1": 3,
-      "fila2": 1,
-      "columna2": 3,
-      "acierto": 0,
-      "momento": "2026-11-05T02:19:28"
+      "fila1": 2,
+      "columna1": 1,
+      "fila2": 3,
+      "columna2": 2,
+      "acierto": 1,
+      "momento": "2026-11-05T09:20:42"
     },
     {
       "ID": 9,
       "partida_id": 1,
-      "fila1": 3,
-      "columna1": 2,
-      "fila2": 2,
-      "columna2": 3,
-      "acierto": 1,
-      "momento": "2026-11-05T02:19:28"
-    },
-    {
-      "ID": 10,
-      "partida_id": 1,
-      "fila1": 3,
-      "columna1": 1,
-      "fila2": 3,
-      "columna2": 0,
-      "acierto": 1,
-      "momento": "2026-11-05T02:19:28"
-    },
-    {
-      "ID": 11,
-      "partida_id": 1,
-      "fila1": 1,
+      "fila1": 0,
       "columna1": 2,
       "fila2": 3,
       "columna2": 2,
       "acierto": 0,
-      "momento": "2026-11-05T02:19:28"
+      "momento": "2026-11-05T09:20:42"
+    },
+    {
+      "ID": 10,
+      "partida_id": 1,
+      "fila1": 0,
+      "columna1": 3,
+      "fila2": 2,
+      "columna2": 1,
+      "acierto": 0,
+      "momento": "2026-11-05T09:20:42"
+    },
+    {
+      "ID": 11,
+      "partida_id": 1,
+      "fila1": 2,
+      "columna1": 3,
+      "fila2": 0,
+      "columna2": 1,
+      "acierto": 1,
+      "momento": "2026-11-05T09:20:42"
     },
     {
       "ID": 12,
@@ -485,298 +346,48 @@
       "columna1": 1,
       "fila2": 2,
       "columna2": 2,
-      "acierto": 1,
-      "momento": "2026-11-05T02:19:28"
+      "acierto": 0,
+      "momento": "2026-11-05T09:20:42"
     },
     {
       "ID": 13,
       "partida_id": 1,
-      "fila1": 0,
-      "columna1": 0,
-      "fila2": 2,
-      "columna2": 0,
-      "acierto": 0,
-      "momento": "2026-11-05T02:19:28"
+      "fila1": 1,
+      "columna1": 3,
+      "fila2": 1,
+      "columna2": 1,
+      "acierto": 1,
+      "momento": "2026-11-05T09:20:42"
     },
     {
       "ID": 14,
       "partida_id": 1,
       "fila1": 0,
-      "columna1": 1,
+      "columna1": 2,
       "fila2": 1,
-      "columna2": 0,
+      "columna2": 2,
       "acierto": 0,
-      "momento": "2026-11-05T02:19:28"
+      "momento": "2026-11-05T09:20:42"
     },
     {
       "ID": 15,
       "partida_id": 1,
-      "fila1": 0,
-      "columna1": 0,
-      "fila2": 1,
+      "fila1": 1,
+      "columna1": 1,
+      "fila2": 0,
       "columna2": 1,
       "acierto": 0,
-      "momento": "2026-11-05T02:19:28"
+      "momento": "2026-11-05T09:20:42"
     },
     {
       "ID": 16,
-      "partida_id": 2,
-      "fila1": 0,
-      "columna1": 1,
-      "fila2": 2,
-      "columna2": 3,
-      "acierto": 1,
-      "momento": "2026-11-05T02:31:02"
-    },
-    {
-      "ID": 17,
-      "partida_id": 2,
-      "fila1": 0,
-      "columna1": 3,
-      "fila2": 1,
-      "columna2": 2,
-      "acierto": 1,
-      "momento": "2026-11-05T02:31:02"
-    },
-    {
-      "ID": 18,
-      "partida_id": 2,
+      "partida_id": 1,
       "fila1": 0,
       "columna1": 0,
-      "fila2": 3,
-      "columna2": 0,
-      "acierto": 1,
-      "momento": "2026-11-05T02:31:02"
-    },
-    {
-      "ID": 19,
-      "partida_id": 2,
-      "fila1": 1,
-      "columna1": 2,
-      "fila2": 0,
-      "columna2": 1,
-      "acierto": 0,
-      "momento": "2026-11-05T02:31:02"
-    },
-    {
-      "ID": 20,
-      "partida_id": 2,
-      "fila1": 3,
-      "columna1": 1,
-      "fila2": 1,
-      "columna2": 1,
-      "acierto": 1,
-      "momento": "2026-11-05T02:31:02"
-    },
-    {
-      "ID": 21,
-      "partida_id": 2,
-      "fila1": 3,
-      "columna1": 0,
-      "fila2": 1,
-      "columna2": 1,
-      "acierto": 0,
-      "momento": "2026-11-05T02:31:02"
-    },
-    {
-      "ID": 22,
-      "partida_id": 2,
-      "fila1": 0,
-      "columna1": 2,
-      "fila2": 2,
-      "columna2": 0,
-      "acierto": 1,
-      "momento": "2026-11-05T02:31:02"
-    },
-    {
-      "ID": 23,
-      "partida_id": 2,
-      "fila1": 3,
-      "columna1": 1,
-      "fila2": 2,
-      "columna2": 0,
-      "acierto": 0,
-      "momento": "2026-11-05T02:31:02"
-    },
-    {
-      "ID": 24,
-      "partida_id": 2,
-      "fila1": 2,
-      "columna1": 1,
-      "fila2": 3,
-      "columna2": 2,
-      "acierto": 1,
-      "momento": "2026-11-05T02:31:02"
-    },
-    {
-      "ID": 25,
-      "partida_id": 2,
-      "fila1": 0,
-      "columna1": 2,
-      "fila2": 3,
-      "columna2": 2,
-      "acierto": 0,
-      "momento": "2026-11-05T02:31:02"
-    },
-    {
-      "ID": 26,
-      "partida_id": 2,
-      "fila1": 2,
-      "columna1": 1,
-      "fila2": 0,
-      "columna2": 1,
-      "acierto": 0,
-      "momento": "2026-11-05T02:31:02"
-    },
-    {
-      "ID": 27,
-      "partida_id": 2,
-      "fila1": 2,
-      "columna1": 2,
-      "fila2": 1,
-      "columna2": 3,
-      "acierto": 1,
-      "momento": "2026-11-05T02:31:02"
-    },
-    {
-      "ID": 28,
-      "partida_id": 2,
-      "fila1": 1,
-      "columna1": 3,
-      "fila2": 3,
-      "columna2": 2,
-      "acierto": 0,
-      "momento": "2026-11-05T02:31:02"
-    },
-    {
-      "ID": 29,
-      "partida_id": 2,
-      "fila1": 2,
-      "columna1": 3,
-      "fila2": 1,
-      "columna2": 3,
-      "acierto": 0,
-      "momento": "2026-11-05T02:31:02"
-    },
-    {
-      "ID": 30,
-      "partida_id": 2,
-      "fila1": 1,
-      "columna1": 0,
-      "fila2": 3,
-      "columna2": 3,
-      "acierto": 1,
-      "momento": "2026-11-05T02:31:02"
-    },
-    {
-      "ID": 31,
-      "partida_id": 2,
-      "fila1": 1,
-      "columna1": 2,
       "fila2": 1,
       "columna2": 0,
       "acierto": 0,
-      "momento": "2026-11-05T02:31:02"
-    },
-    {
-      "ID": 32,
-      "partida_id": 2,
-      "fila1": 3,
-      "columna1": 3,
-      "fila2": 2,
-      "columna2": 2,
-      "acierto": 0,
-      "momento": "2026-11-05T02:31:02"
-    },
-    {
-      "ID": 33,
-      "partida_id": 2,
-      "fila1": 3,
-      "columna1": 1,
-      "fila2": 3,
-      "columna2": 2,
-      "acierto": 0,
-      "momento": "2026-11-05T02:31:02"
-    },
-    {
-      "ID": 34,
-      "partida_id": 2,
-      "fila1": 2,
-      "columna1": 1,
-      "fila2": 3,
-      "columna2": 0,
-      "acierto": 0,
-      "momento": "2026-11-05T02:31:02"
-    },
-    {
-      "ID": 35,
-      "partida_id": 2,
-      "fila1": 0,
-      "columna1": 1,
-      "fila2": 1,
-      "columna2": 1,
-      "acierto": 0,
-      "momento": "2026-11-05T02:31:02"
-    },
-    {
-      "ID": 36,
-      "partida_id": 2,
-      "fila1": 0,
-      "columna1": 3,
-      "fila2": 0,
-      "columna2": 0,
-      "acierto": 0,
-      "momento": "2026-11-05T02:31:02"
-    },
-    {
-      "ID": 37,
-      "partida_id": 2,
-      "fila1": 1,
-      "columna1": 3,
-      "fila2": 0,
-      "columna2": 2,
-      "acierto": 0,
-      "momento": "2026-11-05T02:31:02"
-    },
-    {
-      "ID": 38,
-      "partida_id": 2,
-      "fila1": 3,
-      "columna1": 2,
-      "fila2": 2,
-      "columna2": 3,
-      "acierto": 0,
-      "momento": "2026-11-05T02:31:02"
-    },
-    {
-      "ID": 39,
-      "partida_id": 2,
-      "fila1": 3,
-      "columna1": 1,
-      "fila2": 2,
-      "columna2": 2,
-      "acierto": 0,
-      "momento": "2026-11-05T02:31:02"
-    },
-    {
-      "ID": 40,
-      "partida_id": 2,
-      "fila1": 2,
-      "columna1": 1,
-      "fila2": 2,
-      "columna2": 0,
-      "acierto": 0,
-      "momento": "2026-11-05T02:31:02"
-    },
-    {
-      "ID": 41,
-      "partida_id": 2,
-      "fila1": 1,
-      "columna1": 0,
-      "fila2": 1,
-      "columna2": 1,
-      "acierto": 0,
-      "momento": "2026-11-05T02:31:02"
+      "momento": "2026-11-05T09:20:42"
     }
   ],
   "ParesDescubiertos": [
@@ -789,7 +400,7 @@
     {
       "ID": 2,
       "Partida_id": 1,
-      "Id_valor": 0,
+      "Id_valor": 8,
       "Puntos": 100
     },
     {
@@ -807,102 +418,41 @@
     {
       "ID": 5,
       "Partida_id": 1,
-      "Id_valor": 3,
+      "Id_valor": 0,
       "Puntos": 100
     },
     {
       "ID": 6,
       "Partida_id": 1,
-      "Id_valor": 2,
+      "Id_valor": 7,
       "Puntos": 100
     },
     {
       "ID": 7,
       "Partida_id": 1,
-      "Id_valor": 1,
+      "Id_valor": 3,
       "Puntos": 100
     },
     {
       "ID": 8,
       "Partida_id": 1,
-      "Id_valor": 7,
-      "Puntos": 100
-    },
-    {
-      "ID": 9,
-      "Partida_id": 2,
-      "Id_valor": 0,
-      "Puntos": 100
-    },
-    {
-      "ID": 10,
-      "Partida_id": 2,
       "Id_valor": 1,
       "Puntos": 100
     },
     {
-      "ID": 11,
-      "Partida_id": 2,
+      "ID": 9,
+      "Partida_id": 1,
+      "Id_valor": 9,
+      "Puntos": 100
+    },
+    {
+      "ID": 10,
+      "Partida_id": 1,
       "Id_valor": 2,
       "Puntos": 100
-    },
-    {
-      "ID": 12,
-      "Partida_id": 2,
-      "Id_valor": 4,
-      "Puntos": 100
-    },
-    {
-      "ID": 13,
-      "Partida_id": 2,
-      "Id_valor": 5,
-      "Puntos": 100
-    },
-    {
-      "ID": 14,
-      "Partida_id": 2,
-      "Id_valor": 6,
-      "Puntos": 100
-    },
-    {
-      "ID": 15,
-      "Partida_id": 2,
-      "Id_valor": 3,
-      "Puntos": 100
-    },
-    {
-      "ID": 16,
-      "Partida_id": 2,
-      "Id_valor": 7,
-      "Puntos": 100
     }
   ],
-  "Records": [
-    {
-      "ID": 1,
-      "Partida_id": 1,
-      "Jugador_id": 1,
-      "Nivel": "Clasico Muy Facil",
-      "Intentos": 15,
-      "Aciertos": 8,
-      "Fallos": 7,
-      "Tiempo_segundos": 34,
-      "Puntuacion": 996,
-      "Fecha": "2026-11-05T02:19:28"
-    },
-    {
-      "ID": 2,
-      "Partida_id": 2,
-      "Jugador_id": 2,
-      "Nivel": "Clasico Muy Facil",
-      "Intentos": 26,
-      "Aciertos": 8,
-      "Fallos": 18,
-      "Tiempo_segundos": 39,
-      "Puntuacion": 881,
-      "Fecha": "2026-11-05T02:31:02"
-    }
-  ],
+  "Records": [],
   "Tematicas": [
     {
       "ID": 1,

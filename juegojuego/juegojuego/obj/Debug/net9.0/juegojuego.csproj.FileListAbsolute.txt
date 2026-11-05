@@ -165,3 +165,17 @@ C:\Users\Usuario\Documents\GitHub\Memory-Game--Grupo-1--4-4--2026\juegojuego\jue
 C:\Users\Usuario\Documents\GitHub\Memory-Game--Grupo-1--4-4--2026\juegojuego\juegojuego\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
 C:\Users\Usuario\Documents\GitHub\Memory-Game--Grupo-1--4-4--2026\juegojuego\juegojuego\bin\Debug\net9.0\MySqlConnector.dll
 C:\Users\Usuario\Documents\GitHub\Memory-Game--Grupo-1--4-4--2026\juegojuego\juegojuego\bin\Debug\net9.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\kevin\OneDrive\Desktop\c# en clases\juegojuego\juegojuego\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\kevin\OneDrive\Desktop\c# en clases\juegojuego\juegojuego\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\kevin\OneDrive\Desktop\c# en clases\juegojuego\juegojuego\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\kevin\OneDrive\Desktop\c# en clases\juegojuego\juegojuego\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\kevin\OneDrive\Desktop\c# en clases\juegojuego\juegojuego\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\kevin\OneDrive\Desktop\c# en clases\juegojuego\juegojuego\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\kevin\OneDrive\Desktop\c# en clases\juegojuego\juegojuego\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\kevin\OneDrive\Desktop\c# en clases\juegojuego\juegojuego\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\kevin\OneDrive\Desktop\c# en clases\juegojuego\juegojuego\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+C:\Users\kevin\OneDrive\Desktop\c# en clases\juegojuego\juegojuego\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\kevin\OneDrive\Desktop\c# en clases\juegojuego\juegojuego\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+C:\Users\kevin\OneDrive\Desktop\c# en clases\juegojuego\juegojuego\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+C:\Users\kevin\OneDrive\Desktop\c# en clases\juegojuego\juegojuego\bin\Debug\net9.0\MySqlConnector.dll
+C:\Users\kevin\OneDrive\Desktop\c# en clases\juegojuego\juegojuego\bin\Debug\net9.0\Pomelo.EntityFrameworkCore.MySql.dll

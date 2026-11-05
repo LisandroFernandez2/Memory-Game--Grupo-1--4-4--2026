@@ -14,7 +14,8 @@ namespace juegojuego
 {
     // Pantallas posibles del juego, en el orden en que se recorren:
     // Inicio (boton JUGAR) -> SeleccionModo (elegir el modo de juego) -> ElegirNivel -> Jugando -> Gano o Perdio
-    public enum EstadoJuego { IngresarNombre, Inicio, SeleccionModo, IngresarNombre2, ElegirNivel, Jugando, Gano, Perdio }
+    // En el modo Multijugador, despues de SeleccionModo se pasa por ElegirJugadores (2 a 4) e IngresarNombre2 (un nombre por cada jugador extra)
+    public enum EstadoJuego { IngresarNombre, Inicio, SeleccionModo, ElegirJugadores, IngresarNombre2, ElegirNivel, Jugando, Gano, Perdio }
 
     // Clase principal del juego hereda de Game de MonoGame
     // Maneja los menus la partida y el dibujo.
@@ -54,10 +55,19 @@ namespace juegojuego
         TablaRecords _records = new TablaRecords();
         // Pantalla en la que esta el juego ahora arranca en la pantalla de ingresar nombre
         EstadoJuego _estado = EstadoJuego.IngresarNombre;
-        // Nombre que escribe el jugador al abrir el juego (el segundo lo puse para modo multijugador nada mas)
+        // Nombre que escribe el jugador al abrir el juego
         string _nombreJugador = "";
-        string _nombreJugador2 = "";
+        // Nombres de los jugadores 2, 3 y 4 (solo se usan en el modo multijugador): la posicion 0 es el jugador 2
+        string[] _nombresOtros = { "", "", "" };
+        // Cual de los nombres de _nombresOtros se esta escribiendo ahora (0 = jugador 2, 1 = jugador 3, 2 = jugador 4)
+        int _quienEscribe;
+        // Cuantos jugadores eligio el usuario en el modo multijugador (de 2 a 4)
+        int _cantidadJugadores = MinJugadores;
+        const int MinJugadores = 2;
+        const int MaxJugadores = 4;
         const int MaxNombre = 12;
+        // Un color para cada jugador (el mismo orden que usa ModoMultijugador)
+        static readonly Color[] ColoresJugador = { Color.DeepSkyBlue, Color.OrangeRed, Color.LimeGreen, Color.Yellow };
         Partida _partida;
         // Nivel que se esta jugando
         Nivel _nivel;
@@ -152,7 +162,7 @@ namespace juegojuego
         // Elige la musica segun el estado y solo la cambia si es distinta de la que ya suena
         void ActualizarMusica()
         {
-            bool enMenu = _estado == EstadoJuego.IngresarNombre || _estado == EstadoJuego.IngresarNombre2 || _estado == EstadoJuego.Inicio || _estado == EstadoJuego.SeleccionModo || _estado == EstadoJuego.ElegirNivel;
+            bool enMenu = _estado == EstadoJuego.IngresarNombre || _estado == EstadoJuego.IngresarNombre2 || _estado == EstadoJuego.Inicio || _estado == EstadoJuego.SeleccionModo || _estado == EstadoJuego.ElegirJugadores || _estado == EstadoJuego.ElegirNivel;
             SoundEffectInstance deseada = enMenu ? ModoActual.MusicaMenu : ModoActual.MusicaPartida;
             if (deseada != _musicaActual) Reproducir(deseada);
         }
@@ -176,15 +186,36 @@ namespace juegojuego
             GuardarModoJuego(); //lo pongo aca para que cada vez que elija un modo de juego se haga un insert en la base de datos
             _niveles = modo.NivelesPara(ModoActual);
 
-            if (modo.CantidadJugadores > 1)
+            // Arranca con la cantidad minima de jugadores; en el multijugador el usuario la cambia en la pantalla siguiente
+            _cantidadJugadores = MinJugadores;
+
+            if (modo is ModoMultijugador)
             {
-                _nombreJugador2 = "";
-                _estado = EstadoJuego.IngresarNombre2;
+                // Multijugador: primero se elige cuantos jugadores son (2 a 4) y despues se piden los nombres
+                _estado = EstadoJuego.ElegirJugadores;
+            }
+            else if (modo.CantidadJugadores > 1)
+            {
+                // Otro modo con varios jugadores fijos: se piden los nombres directamente
+                EmpezarNombres();
             }
             else
             {
                 _estado = EstadoJuego.ElegirNivel;
             }
+        }
+
+        // Recibe: nada Devuelve: la cantidad de jugadores que tiene la partida
+        // En el modo Multijugador es la que eligio el usuario (2 a 4); en los demas modos la define el propio modo
+        int JugadoresDeLaPartida => _modoJuego is ModoMultijugador ? _cantidadJugadores : _modoJuego.CantidadJugadores;
+
+        // Recibe: nada Devuelve: nada
+        // Vacia los nombres de los jugadores extra y pasa a pedir el del jugador 2 (despues se piden el 3 y el 4 si hay)
+        void EmpezarNombres()
+        {
+            for (int i = 0; i < _nombresOtros.Length; i++) _nombresOtros[i] = "";
+            _quienEscribe = 0;
+            _estado = EstadoJuego.IngresarNombre2;
         }
 
         // Recibe: nivel el Nivel con el que se empieza Devuelve: nada
@@ -211,13 +242,14 @@ namespace juegojuego
             _ratioCarta = (float)caras[0].Width / caras[0].Height;
 
             // Crea la partida La funcion 'valor => ' arma los sprites de dorso y cara para cada valor
-            // El modo de juego dice cuantos jugadores hay
+            // La cantidad de jugadores la define el modo de juego (en el multijugador la elige el usuario de 2 a 4)
             _partida = new Partida(_nombreJugador, nivel, valor =>
-            (new Sprite(dorso, Vector2.Zero), new Sprite(caras[valor], Vector2.Zero)), _modoJuego.CantidadJugadores);
+            (new Sprite(dorso, Vector2.Zero), new Sprite(caras[valor], Vector2.Zero)), JugadoresDeLaPartida);
+            // El jugador 1 usa el nombre de la primera pantalla y los jugadores 2, 3 y 4 los que se escribieron despues
             for (int i = 0; i < _partida.Jugadores.Count; i++)
             {
                 if (i == 0) _partida.Jugadores[i].nombre = _nombreJugador;
-                else if (i == 1) _partida.Jugadores[i].nombre = _nombreJugador2;
+                else if (i - 1 < _nombresOtros.Length) _partida.Jugadores[i].nombre = _nombresOtros[i - 1];
             }
             // Calcula donde va cada carta en pantalla
             AcomodarCartas();
@@ -374,6 +406,11 @@ namespace juegojuego
                     ActualizarSeleccionModo(Tecla, click, mp);
                     break;
 
+                // ELEGIR JUGADORES (solo multijugador): 2, 3 o 4 o click en un boton eligen cuantos juegan; ESC vuelve a los modos
+                case EstadoJuego.ElegirJugadores:
+                    ActualizarElegirJugadores(Tecla, click, mp);
+                    break;
+
                 // ELEGIR NIVEL: ESC vuelve a los modos; 1 a 9 o click en un boton inician un nivel; flechas o click en las flechas cambian de tematica
                 case EstadoJuego.ElegirNivel:
                     ActualizarMenu(Tecla, click, mp);
@@ -441,6 +478,38 @@ namespace juegojuego
             if (!click) return;
             for (int i = 0; i < _modosJuego.Length; i++)
                 if (RectModoJuego(i).Contains(mp)) { ElegirModoJuego(_modosJuego[i]); break; }
+        }
+
+        // Recibe: tecla funcion que dice si una tecla se acaba de apretar click true si hubo click en este cuadro mp posicion del mouse
+        // Devuelve: nada
+        // Controles de la pantalla de cantidad de jugadores: ESC vuelve a los modos; las teclas 2 a 4 o un click en un boton
+        // eligen cuantos jugadores son y pasan a pedir los nombres
+        void ActualizarElegirJugadores(Func<Keys, bool> tecla, bool click, Point mp)
+        {
+            if (tecla(Keys.Escape)) { _estado = EstadoJuego.SeleccionModo; return; }
+
+            // Teclas 2 a 4 (fila de numeros o teclado numerico): eligen esa cantidad de jugadores
+            for (int n = MinJugadores; n <= MaxJugadores; n++)
+            {
+                if (tecla((Keys)((int)Keys.D0 + n)) || tecla((Keys)((int)Keys.NumPad0 + n)))
+                {
+                    _cantidadJugadores = n;
+                    EmpezarNombres();
+                    return;
+                }
+            }
+
+            // Click sobre uno de los botones
+            if (!click) return;
+            for (int n = MinJugadores; n <= MaxJugadores; n++)
+            {
+                if (RectCantidadJugadores(n).Contains(mp))
+                {
+                    _cantidadJugadores = n;
+                    EmpezarNombres();
+                    break;
+                }
+            }
         }
 
         // Recibe: tecla funcion que dice si una tecla se acaba de apretar click true si hubo click en este cuadro mp posicion del mouse
@@ -555,6 +624,7 @@ namespace juegojuego
             {
                 case EstadoJuego.Inicio: DibujarInicio(); break;
                 case EstadoJuego.SeleccionModo: DibujarSeleccionModo(); break;
+                case EstadoJuego.ElegirJugadores: DibujarElegirJugadores(); break;
                 case EstadoJuego.ElegirNivel: DibujarMenu(); break;
                 case EstadoJuego.IngresarNombre: DibujarIngresarNombre(); break;
                 case EstadoJuego.IngresarNombre2: DibujarIngresarNombre2(); break;
@@ -591,6 +661,17 @@ namespace juegojuego
 
         // Boton SALIR de la pantalla de inicio (debajo de JUGAR)
         Rectangle RectSalir => new Rectangle(Ancho / 2 - 250, 660, 500, 80);
+
+        // Recibe: n cantidad de jugadores que representa el boton (de 2 a 4)
+        // Devuelve: el rectangulo de ese boton en la pantalla de cantidad de jugadores: van uno al lado del otro y centrados
+        Rectangle RectCantidadJugadores(int n)
+        {
+            const int ancho = 260, alto = 200, separacion = 50, y = 460;
+            int cantidad = MaxJugadores - MinJugadores + 1;
+            int anchoTotal = cantidad * ancho + (cantidad - 1) * separacion;
+            int x0 = (Ancho - anchoTotal) / 2;
+            return new Rectangle(x0 + (n - MinJugadores) * (ancho + separacion), y, ancho, alto);
+        }
 
         // Recibe: i numero de modo de juego empieza en 0
         // Devuelve: el rectangulo de su boton en la lista de modos los botones se apilan hacia abajo centrados
@@ -690,6 +771,30 @@ namespace juegojuego
 
             Texto("ESC: VOLVER", 20, Alto - 30, 2, Color.LightGray);
             string ayuda = "TECLAS 1 A 9 O CLICK: ELEGIR MODO";
+            Texto(ayuda, Ancho - 20 - FuentePixel.Ancho(ayuda, 2), Alto - 30, 2, Color.LightGray);
+        }
+
+        // Recibe: nada Devuelve: nada
+        // Dibuja la pantalla para elegir cuantos jugadores van a jugar el multijugador: un boton grande para 2, 3 y 4
+        void DibujarElegirJugadores()
+        {
+            // Posicion del mouse para el efecto al pasar por encima de un boton
+            Point mp = Mouse.GetState().Position;
+
+            Texto("JUEGO DE MEMORIA", Ancho / 2, 250, 11, Color.White, true);
+            Texto("CUANTOS JUGADORES VAN A JUGAR?", Ancho / 2, 400, 4, Color.LightGray, true);
+
+            for (int n = MinJugadores; n <= MaxJugadores; n++)
+            {
+                Rectangle r = RectCantidadJugadores(n);
+                DibujarBoton(r, r.Contains(mp));
+                // El numero grande con el color del ultimo jugador que habria en esa partida y la palabra JUGADORES abajo
+                Texto(n.ToString(), r.X + r.Width / 2, r.Y + 35, 10, ColoresJugador[n - 1], true);
+                Texto("JUGADORES", r.X + r.Width / 2, r.Y + 140, 3, Color.White, true);
+            }
+
+            Texto("ESC: VOLVER", 20, Alto - 30, 2, Color.LightGray);
+            string ayuda = "TECLAS 2 A 4 O CLICK: ELEGIR";
             Texto(ayuda, Ancho - 20 - FuentePixel.Ancho(ayuda, 2), Alto - 30, 2, Color.LightGray);
         }
 
@@ -897,7 +1002,7 @@ namespace juegojuego
             if (!valido) return;
 
             if (pidiendo1 && _nombreJugador.Length < MaxNombre) _nombreJugador += c;
-            else if (pidiendo2 && _nombreJugador2.Length < MaxNombre) _nombreJugador2 += c;
+            else if (pidiendo2 && _nombresOtros[_quienEscribe].Length < MaxNombre) _nombresOtros[_quienEscribe] += c;
         }
 
         // Controles de la pantalla del nombre: BORRAR borra una letra, ENTER confirma, ESC cierra el juego
@@ -933,33 +1038,56 @@ namespace juegojuego
 
             Texto("ENTER: CONTINUAR     ESC: SALIR", 20, Alto - 30, 2, Color.LightGray);
         }
+        // Controles de la pantalla de nombres de los jugadores extra: BORRAR borra una letra, ENTER confirma el nombre
+        // (si faltan jugadores pide el siguiente y si no pasa a elegir el nivel), ESC vuelve al paso anterior
         void ActualizarIngresarNombre2(Func<Keys, bool> tecla)
         {
-            if (tecla(Keys.Escape)) { _estado = EstadoJuego.SeleccionModo; return; }
-
-            if (tecla(Keys.Back) && _nombreJugador2.Length > 0)
-                _nombreJugador2 = _nombreJugador2.Substring(0, _nombreJugador2.Length - 1);
-
-            if (tecla(Keys.Enter) && _nombreJugador2.Trim().Length > 0)
+            if (tecla(Keys.Escape))
             {
-                _nombreJugador2 = _nombreJugador2.Trim();
-                GuardarJugador2();
-                _estado = EstadoJuego.ElegirNivel;
+                // Si ya se estaba escribiendo el jugador 3 o 4 vuelve al nombre anterior
+                if (_quienEscribe > 0) _quienEscribe--;
+                // Si era el jugador 2 vuelve a la pantalla de cantidad (multijugador) o a la de modos (los demas modos)
+                else _estado = _modoJuego is ModoMultijugador ? EstadoJuego.ElegirJugadores : EstadoJuego.SeleccionModo;
+                return;
+            }
+
+            string actual = _nombresOtros[_quienEscribe];
+            if (tecla(Keys.Back) && actual.Length > 0)
+                _nombresOtros[_quienEscribe] = actual.Substring(0, actual.Length - 1);
+
+            // ENTER: confirma el nombre solo si escribio algo
+            if (tecla(Keys.Enter) && _nombresOtros[_quienEscribe].Trim().Length > 0)
+            {
+                _nombresOtros[_quienEscribe] = _nombresOtros[_quienEscribe].Trim();
+                GuardarJugadorExtra(_nombresOtros[_quienEscribe]);
+
+                // Hay un nombre por cada jugador menos el 1: si todavia falta alguno pide el siguiente, si no pasa a los niveles
+                if (_quienEscribe < JugadoresDeLaPartida - 2) _quienEscribe++;
+                else _estado = EstadoJuego.ElegirNivel;
             }
         }
 
+        // Dibuja los nombres que ya se escribieron, el pedido del nombre del jugador que toca y la caja con un cursor que parpadea
         void DibujarIngresarNombre2()
         {
             Texto("JUEGO DE MEMORIA", Ancho / 2, 250, 11, Color.White, true);
-            Texto($"JUGADOR 1: {_nombreJugador}", Ancho / 2, 380, 3, Color.DeepSkyBlue, true);
-            Texto("NOMBRE DEL JUGADOR 2", Ancho / 2, 440, 4, Color.LightGray, true);
+
+            // Numero del jugador cuyo nombre se esta escribiendo (el 1 ya lo escribio al abrir el juego)
+            int numero = _quienEscribe + 2;
+
+            // Los jugadores que ya tienen nombre, cada uno con su color: el 1 y los extra anteriores a este
+            Texto($"JUGADOR 1: {_nombreJugador}", Ancho / 2, 340, 3, ColoresJugador[0], true);
+            for (int i = 0; i < _quienEscribe; i++)
+                Texto($"JUGADOR {i + 2}: {_nombresOtros[i]}", Ancho / 2, 340 + (i + 1) * 36, 3, ColoresJugador[i + 1], true);
+
+            Texto($"NOMBRE DEL JUGADOR {numero}", Ancho / 2, 470, 4, ColoresJugador[numero - 1], true);
 
             Rectangle caja = new Rectangle(Ancho / 2 - 400, 520, 800, 100);
             _spriteBatch.Draw(_pixel, caja, new Color(40, 30, 80) * 0.9f);
             Borde(caja, Color.Gold, 3);
 
             bool cursor = (Environment.TickCount64 / 500) % 2 == 0;
-            Texto(_nombreJugador2 + (cursor ? "_" : ""), Ancho / 2, caja.Y + 25, 7, Color.White, true);
+            Texto(_nombresOtros[_quienEscribe] + (cursor ? "_" : ""), Ancho / 2, caja.Y + 25, 7, Color.White, true);
 
             Texto("ENTER: CONTINUAR     ESC: VOLVER", 20, Alto - 30, 2, Color.LightGray);
         }
@@ -973,12 +1101,14 @@ namespace juegojuego
             }
         }
 
-        private void GuardarJugador2()
+        // Recibe: nombre el nombre de un jugador extra (2, 3 o 4) Devuelve: nada
+        // Lo guarda en la tabla de jugadores si todavia no estaba
+        private void GuardarJugadorExtra(string nombre)
         {
             using var db = new AppDbContext();
-            if (!db.Jugador.Any(j => j.Nombre == _nombreJugador2))
+            if (!db.Jugador.Any(j => j.Nombre == nombre))
             {
-                db.Jugador.Add(new JugadorDB(0, _nombreJugador2));
+                db.Jugador.Add(new JugadorDB(0, nombre));
                 db.SaveChanges();
             }
         }
