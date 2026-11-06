@@ -5,7 +5,7 @@ namespace juegojuego.BasedeDatos
 {
     // Tabla "partida": una partida terminada (ganada o perdida).
     // El modo de juego se obtiene por Nivel.ModoJuego (no se repite aca).
-    // Los records NO tienen tabla propia: son las partidas ganadas de modos con GuardaRecords, ordenadas por puntaje.
+    // Si la partida se gana en un modo con GuardaRecords, un trigger de MySQL la copia sola a la tabla "record".
     public class PartidaDB
     {
         public int Id { get; set; }

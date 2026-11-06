@@ -136,8 +136,12 @@ namespace juegojuego
             _recursos = new Recursos(GraphicsDevice);
             ModoActual.Cargar(_recursos);
 
-            // Carga los records guardados en el archivo
-            try { _records.CargarDesde(GestorArchivos.CargarRecordsBinario()); }
+            // Carga los records: primero de la base de datos y, si no se puede, del archivo records.bin
+            try
+            {
+                List<Puntaje> desdeBD = RepositorioBD.CargarRecords();
+                _records.CargarDesde(desdeBD ?? GestorArchivos.CargarRecordsBinario());
+            }
             catch (Exception) { /* archivo de records daniado: se empieza vacio */ }
 
             ActualizarMusica(); // arranca con la musica del menu
@@ -183,7 +187,7 @@ namespace juegojuego
         {
             if (!modo.Disponible) return;
             _modoJuego = modo;
-            GuardarModoJuego(); //lo pongo aca para que cada vez que elija un modo de juego se haga un insert en la base de datos
+            // Los modos de juego y sus niveles ya estan cargados en la base (MemoryGame_BaseDeDatos.sql): ya no se insertan aca
             _niveles = modo.NivelesPara(ModoActual);
 
             // Arranca con la cantidad minima de jugadores; en el multijugador el usuario la cambia en la pantalla siguiente
@@ -232,7 +236,6 @@ namespace juegojuego
         void IniciarPartida(Nivel nivel)
         {
             _nivel = nivel;
-            GuardarNivel();
             Modo modo = ModoActual;
 
             // Elige al azar las caras de esta partida (una por cada par) y un dorso para todas las cartas
@@ -337,8 +340,8 @@ namespace juegojuego
                 _ultimoPuntaje = _partida.Finalizar();
                 // El record aclara de que modo y nivel es ej: "UNDERTALE MUY FACIL"
                 _ultimoPuntaje.Nivel = EtiquetaRecord();
+                // Guarda la partida en la base de datos (si el modo guarda records, el trigger de MySQL la copia a la tabla record)
                 GuardarPartida(true);
-                GuardarDatosJSON();
                 // Los modos que no guardan records (ej: multijugador) muestran el resultado pero no lo anotan en la tabla
                 if (_modoJuego.GuardaRecords)
                 {
@@ -354,7 +357,6 @@ namespace juegojuego
             {
                 _partida.Cronometro.Pausar();
                 GuardarPartida(false);
-                GuardarDatosJSON();
                 _estado = EstadoJuego.Perdio;
             }
         }
@@ -962,34 +964,43 @@ namespace juegojuego
             // Linea derecha
             _spriteBatch.Draw(_pixel, new Rectangle(r.Right - grosor, r.Y, grosor, r.Height), color);
         }
-        // Lo creo para poder cargar la carpeta Assets en la base de datos
+        // Lo creo para poder cargar las tematicas en la base de datos
         protected override void Initialize()
         {
             CargarTematicasEnBD();
+            // Si quedaron partidas en el JSON sin pasar a MySQL (ej: estaba apagado), las manda ahora
+            RepositorioBD.SincronizarConBaseDeDatos();
             base.Initialize();
         }
+
+        // Carga en la tabla tematica las tematicas del juego (CatalogoModos) que todavia no esten
+        // (la tematica "Mezcla" ya la crea el script SQL, asi que esa se saltea)
         private void CargarTematicasEnBD()
         {
-            using var db = new AppDbContext();
-
-            string raiz = Path.Combine(AppContext.BaseDirectory, "Assets");
-
-            foreach (string dirTematica in Directory.GetDirectories(raiz))
+            try
             {
-                string nombreCarpeta = Path.GetFileName(dirTematica);
+                using var db = new AppDbContext();
 
-                bool existe = db.Tematica.Any(t => t.Carpeta == nombreCarpeta);
-                if (!existe)
+                foreach (Modo tematica in CatalogoModos.Todos)
                 {
-                    db.Tematica.Add(new TematicaDB
+                    bool existe = db.Tematica.Any(t => t.Carpeta == tematica.Carpeta);
+                    if (!existe)
                     {
-                        Nombre = nombreCarpeta,
-                        Carpeta = nombreCarpeta
-                    });
+                        db.Tematica.Add(new TematicaDB
+                        {
+                            Nombre = tematica.Nombre,
+                            Carpeta = tematica.Carpeta
+                        });
+                    }
                 }
-            }
 
-            db.SaveChanges();
+                db.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                // Sin base de datos el juego igual arranca
+                GestorArchivos.RegistrarLog($"BD: no se pudieron cargar las tematicas: {RepositorioBD.Detalle(ex)}");
+            }
         }
         void AlEscribir(object sender, TextInputEventArgs e)
         {
@@ -1091,160 +1102,48 @@ namespace juegojuego
 
             Texto("ENTER: CONTINUAR     ESC: VOLVER", 20, Alto - 30, 2, Color.LightGray);
         }
+
+        // Recibe: nada Devuelve: nada
+        // Guarda al jugador 1 en la tabla jugador si todavia no estaba
         private void GuardarJugador1()
         {
-            using var db = new AppDbContext();
-            if (!db.Jugador.Any(j => j.Nombre == _nombreJugador))
-            {
-                db.Jugador.Add(new JugadorDB(0, _nombreJugador));
-                db.SaveChanges();
-            }
+            GuardarJugadorSiNoExiste(_nombreJugador);
         }
 
         // Recibe: nombre el nombre de un jugador extra (2, 3 o 4) Devuelve: nada
         // Lo guarda en la tabla de jugadores si todavia no estaba
         private void GuardarJugadorExtra(string nombre)
         {
-            using var db = new AppDbContext();
-            if (!db.Jugador.Any(j => j.Nombre == nombre))
-            {
-                db.Jugador.Add(new JugadorDB(0, nombre));
-                db.SaveChanges();
-            }
-        }
-        private void GuardarModoJuego()
-        {
-            using var db = new AppDbContext();
-            db.Modo_Juego.Add(new Modo_JuegoDB(0, _modoJuego.Nombre, _modoJuego.Descripcion, _modoJuego.Disponible, _modoJuego.CantidadJugadores, _modoJuego.GuardaRecords));
-            db.SaveChanges();
-        }
-        private void GuardarNivel()
-        {
-            using var db = new AppDbContext();
-            var modoDb = db.Modo_Juego.FirstOrDefault(m => m.nombre == _modoJuego.Nombre);
-            if (modoDb == null) return;
-            int? tiempoLimite = _nivel is NivelCronometro c ? c.TiempoLimiteSegundos : (int?)null;
-            int? vidas = _nivel is NivelSupervivencia s ? s.vidas : (int?)null;
-            db.Nivel.Add(new NivelDB(0, modoDb.ID, _nivel.Nombre, _nivel.Filas, _nivel.Columnas, _nivel.Pares, tiempoLimite, vidas));
-            db.SaveChanges();
+            GuardarJugadorSiNoExiste(nombre);
         }
 
+        // Recibe: nombre del jugador Devuelve: nada
+        // Si no hay un jugador con ese nombre en la base lo agrega. Si falla la base el juego sigue igual
+        private void GuardarJugadorSiNoExiste(string nombre)
+        {
+            try
+            {
+                using var db = new AppDbContext();
+                if (!db.Jugador.Any(j => j.Nombre == nombre))
+                {
+                    db.Jugador.Add(new JugadorDB { Nombre = nombre });
+                    db.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                GestorArchivos.RegistrarLog($"BD: no se pudo guardar el jugador {nombre}: {RepositorioBD.Detalle(ex)}");
+            }
+        }
+
+        // Recibe: gano true si gano false si perdio Devuelve: nada
+        // Guarda la partida con sus movimientos y pares descubiertos en la base de datos.
+        // Si gano y el modo guarda records, el trigger de MySQL la copia sola a la tabla record
+        // (ya no se inserta el record a mano porque quedaria duplicado)
         private void GuardarPartida(bool gano)
         {
-            using var db = new AppDbContext();
-
-            var modoDb = db.Modo_Juego.FirstOrDefault(m => m.nombre == _modoJuego.Nombre);
-            if (modoDb == null) return;
-
-            var jugadorDb = db.Jugador.FirstOrDefault(j => j.Nombre == _nombreJugador);
-            if (jugadorDb == null) return;
-
-            int? tiempoLimite = _nivel is NivelCronometro c ? c.TiempoLimiteSegundos : (int?)null;
-            var nivelDb = db.Nivel.FirstOrDefault(n => n.Modo_juego_id == modoDb.ID
-                                                    && n.Nombre == _nivel.Nombre
-                                                    && n.Tiempo_limite == tiempoLimite);
-            if (nivelDb == null) return;
-
-
-            var tematicaDb = db.Tematica.FirstOrDefault(t => t.Nombre == ModoActual.Nombre || t.Carpeta == ModoActual.Nombre);
-            if (tematicaDb == null)
-            {
-                tematicaDb = new TematicaDB { Nombre = ModoActual.Nombre, Carpeta = ModoActual.Nombre };
-                db.Tematica.Add(tematicaDb);
-                db.SaveChanges();
-            }
-
-
-            DateTime fecha = DateTime.Now;
-            int puntuacion = _ultimoPuntaje?.Puntuacion ?? 0;
-            var partidaDb = new PartidaDB(0, jugadorDb.ID, nivelDb.ID, tematicaDb.ID, fecha,_partida.Contador.Intentos,_partida.Contador.Aciertos,_partida.Contador.Fallos,(int)_partida.Cronometro.SegundosTranscurridos,puntuacion,gano ? 1 : 0);
-            db.Partida.Add(partidaDb);
-            db.SaveChanges();
-
-            GuardarCartas(partidaDb.ID);
-            GuardarMovimientos(partidaDb.ID);
-            GuardarParesDescubiertos(partidaDb.ID);
-            GuardarRecord(partidaDb.ID, jugadorDb.ID);
+            _partida.GuardarEnBaseDeDatos(_modoJuego.Nombre, ModoActual.Nombre, gano);
         }
-        private void GuardarCartas(int partidaId)
-        {
-            using var db = new AppDbContext();
 
-            foreach (carta c in _partida.Tablero.ObtenerTodas())
-            {
-                db.Carta.Add(new CartaDB(0, partidaId, c.fila, c.columna, c.idValor,c.estaDescubierta ? 1 : 0,c.estaEmparejada ? 1 : 0));
-            }
-
-            db.SaveChanges();
-        }
-        private void GuardarMovimientos(int partidaId)
-        {
-            using var db = new AppDbContext();
-
-            DateTime momento = DateTime.Now;
-
-            foreach (Movimiento m in _partida.Historial.ObtenerHistorialCompleto())
-            {
-                db.Movimiento.Add(new MovimientoDB(0, partidaId, m.Fila1, m.Columna1, m.Fila2, m.Columna2, m.Acierto ? 1 : 0, momento));
-            }
-
-            db.SaveChanges();
-        }
-        private void GuardarParesDescubiertos(int partidaId)
-        {
-            using var db = new AppDbContext();
-
-            foreach (var par in _partida.ParesDescubiertos.ObtenerPares())
-            {
-                db.Par_descubierto.Add(new Par_descubiertoDB(0, partidaId, par.IdValor, par.Puntos));
-            }
-
-            db.SaveChanges();
-        }
-        private void GuardarRecord(int partidaId, int jugadorId)
-        {
-            if (!_modoJuego.GuardaRecords || _ultimoPuntaje == null) return;
-
-            using var db = new AppDbContext();
-
-            db.Record.Add(new RecordDB(0, partidaId, jugadorId,
-                _ultimoPuntaje.Nivel,
-                _ultimoPuntaje.Intentos,
-                _ultimoPuntaje.Aciertos,
-                _ultimoPuntaje.Fallos,
-                (int)_ultimoPuntaje.Tiempo.TotalSeconds,
-                _ultimoPuntaje.Puntuacion,
-                _ultimoPuntaje.Fecha));
-
-            db.SaveChanges();
-        }
-        private void GuardarDatosJSON()
-        {
-            using (var db = new AppDbContext())
-            {
-                var datos = new
-                {
-                    Jugadores = db.Jugador.ToList(),
-                    ModosJuego = db.Modo_Juego.ToList(),
-                    Niveles = db.Nivel.ToList(),
-                    Partidas = db.Partida.ToList(),
-                    Cartas = db.Carta.ToList(),
-                    Movimientos = db.Movimiento.ToList(),
-                    ParesDescubiertos = db.Par_descubierto.ToList(),
-                    Records = db.Record.ToList(),
-                    Tematicas = db.Tematica.ToList()
-                };// Hago que todo sea una lista
-
-                var opciones = new JsonSerializerOptions
-                {
-                    WriteIndented = true,
-                    ReferenceHandler = ReferenceHandler.IgnoreCycles
-                };
-
-                string json = JsonSerializer.Serialize(datos, opciones);
-
-                File.WriteAllText("Datos JSON guardados", json);
-            }
-        }
     }
 }

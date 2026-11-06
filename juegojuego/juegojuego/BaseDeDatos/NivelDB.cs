@@ -9,8 +9,9 @@ namespace juegojuego.BasedeDatos
         public int Filas { get; set; }
         public int Columnas { get; set; }
 
-        // Columna calculada por MySQL (filas * columnas / 2): nunca se asigna desde C#
-        public int Pares { get; set; }
+        // Solo lectura: se calcula aca (filas * columnas / 2) y EF no la guarda.
+        // En la base la calcula MySQL, asi que nunca se asigna desde C#
+        public int Pares => Filas * Columnas / 2;
 
         // Solo NivelCronometro (modos Cronometro y Contrarreloj): segundos limite. null en los demas
         public int? TiempoLimite { get; set; }
