@@ -1,4 +1,4 @@
-﻿using juegojuego;
+﻿﻿using juegojuego;
 using juegojuego.modelos;
 using System;
 using System.Collections.Generic;
@@ -230,6 +230,16 @@ namespace juegojuego
         // Devuelve: true cuando todas las cartas estan emparejadas o sea ganaste
         public bool Termino => Tablero.TableroCompleto();
 
+        // Guarda esta partida en la base de datos MySQL (tablas partida, movimiento y par_descubierto).
+        // Si la partida se gano y el modo guarda records, el trigger de MySQL la copia sola a la tabla record.
+        // Recibe: modoJuego nombre del modo de juego (ej: "Clasico"), tematica nombre de la tematica (ej: "Mezcla")
+        //         y gano true si el jugador gano la partida false si perdio
+        // Devuelve: true si se guardo false si no se pudo (ej: MySQL apagado). El juego sigue andando igual
+        public bool GuardarEnBaseDeDatos(string modoJuego, string tematica, bool gano)
+        {
+            return RepositorioBD.GuardarPartida(this, modoJuego, tematica, gano);
+        }
+
         // Cierra la partida: detiene el cronómetro y arma el registro de puntaje final
         // Recibe: nada
         // Devuelve: el Puntaje final de la partida
@@ -251,3 +261,5 @@ namespace juegojuego
         }
     }
 }
+
+

@@ -1,0 +1,371 @@
+[
+  {
+    "Jugador": "FERM",
+    "Modo": "Clasico",
+    "Nivel": "Muy Facil",
+    "Filas": 4,
+    "Columnas": 4,
+    "TiempoLimite": null,
+    "Vidas": null,
+    "Tematica": "Mezcla",
+    "Fecha": "2026-11-05T20:53:07.0625091-03:00",
+    "Intentos": 11,
+    "Aciertos": 8,
+    "Fallos": 3,
+    "TiempoSegundos": 16,
+    "Puntuacion": 1054,
+    "Gano": true,
+    "Guardada": true,
+    "Movimientos": [
+      {
+        "Numero": 1,
+        "Fila1": 0,
+        "Columna1": 0,
+        "Fila2": 1,
+        "Columna2": 1,
+        "Acierto": false,
+        "Momento": "2026-11-05T20:52:51.3325702-03:00"
+      },
+      {
+        "Numero": 2,
+        "Fila1": 1,
+        "Columna1": 0,
+        "Fila2": 0,
+        "Columna2": 1,
+        "Acierto": false,
+        "Momento": "2026-11-05T20:52:52.8313361-03:00"
+      },
+      {
+        "Numero": 3,
+        "Fila1": 1,
+        "Columna1": 2,
+        "Fila2": 0,
+        "Columna2": 1,
+        "Acierto": true,
+        "Momento": "2026-11-05T20:52:54.4979804-03:00"
+      },
+      {
+        "Numero": 4,
+        "Fila1": 0,
+        "Columna1": 2,
+        "Fila2": 0,
+        "Columna2": 3,
+        "Acierto": true,
+        "Momento": "2026-11-05T20:52:55.7813246-03:00"
+      },
+      {
+        "Numero": 5,
+        "Fila1": 1,
+        "Columna1": 3,
+        "Fila2": 0,
+        "Columna2": 0,
+        "Acierto": true,
+        "Momento": "2026-11-05T20:52:57.5146539-03:00"
+      },
+      {
+        "Numero": 6,
+        "Fila1": 2,
+        "Columna1": 0,
+        "Fila2": 2,
+        "Columna2": 1,
+        "Acierto": false,
+        "Momento": "2026-11-05T20:52:59.3813524-03:00"
+      },
+      {
+        "Numero": 7,
+        "Fila1": 2,
+        "Columna1": 2,
+        "Fila2": 1,
+        "Columna2": 1,
+        "Acierto": true,
+        "Momento": "2026-11-05T20:53:01.4979965-03:00"
+      },
+      {
+        "Numero": 8,
+        "Fila1": 2,
+        "Columna1": 3,
+        "Fila2": 2,
+        "Columna2": 0,
+        "Acierto": true,
+        "Momento": "2026-11-05T20:53:02.9146927-03:00"
+      },
+      {
+        "Numero": 9,
+        "Fila1": 3,
+        "Columna1": 1,
+        "Fila2": 1,
+        "Columna2": 0,
+        "Acierto": true,
+        "Momento": "2026-11-05T20:53:04.4146812-03:00"
+      },
+      {
+        "Numero": 10,
+        "Fila1": 3,
+        "Columna1": 0,
+        "Fila2": 2,
+        "Columna2": 1,
+        "Acierto": true,
+        "Momento": "2026-11-05T20:53:05.881389-03:00"
+      },
+      {
+        "Numero": 11,
+        "Fila1": 3,
+        "Columna1": 2,
+        "Fila2": 3,
+        "Columna2": 3,
+        "Acierto": true,
+        "Momento": "2026-11-05T20:53:07.0480383-03:00"
+      }
+    ],
+    "Pares": [
+      {
+        "IdValor": 7,
+        "Puntos": 100
+      },
+      {
+        "IdValor": 1,
+        "Puntos": 100
+      },
+      {
+        "IdValor": 5,
+        "Puntos": 100
+      },
+      {
+        "IdValor": 4,
+        "Puntos": 100
+      },
+      {
+        "IdValor": 3,
+        "Puntos": 100
+      },
+      {
+        "IdValor": 0,
+        "Puntos": 100
+      },
+      {
+        "IdValor": 2,
+        "Puntos": 100
+      },
+      {
+        "IdValor": 6,
+        "Puntos": 100
+      }
+    ]
+  },
+  {
+    "Jugador": "PEPE",
+    "Modo": "Clasico",
+    "Nivel": "Muy Facil",
+    "Filas": 4,
+    "Columnas": 4,
+    "TiempoLimite": null,
+    "Vidas": null,
+    "Tematica": "Mezcla",
+    "Fecha": "2026-11-05T21:03:44.9312981-03:00",
+    "Intentos": 18,
+    "Aciertos": 8,
+    "Fallos": 10,
+    "TiempoSegundos": 32,
+    "Puntuacion": 968,
+    "Gano": true,
+    "Guardada": true,
+    "Movimientos": [
+      {
+        "Numero": 1,
+        "Fila1": 0,
+        "Columna1": 0,
+        "Fila2": 1,
+        "Columna2": 1,
+        "Acierto": false,
+        "Momento": "2026-11-05T21:03:13.7358954-03:00"
+      },
+      {
+        "Numero": 2,
+        "Fila1": 1,
+        "Columna1": 0,
+        "Fila2": 0,
+        "Columna2": 1,
+        "Acierto": false,
+        "Momento": "2026-11-05T21:03:15.2347156-03:00"
+      },
+      {
+        "Numero": 3,
+        "Fila1": 1,
+        "Columna1": 2,
+        "Fila2": 1,
+        "Columna2": 3,
+        "Acierto": false,
+        "Momento": "2026-11-05T21:03:16.7680609-03:00"
+      },
+      {
+        "Numero": 4,
+        "Fila1": 0,
+        "Columna1": 3,
+        "Fila2": 0,
+        "Columna2": 2,
+        "Acierto": false,
+        "Momento": "2026-11-05T21:03:18.2513473-03:00"
+      },
+      {
+        "Numero": 5,
+        "Fila1": 1,
+        "Columna1": 1,
+        "Fila2": 0,
+        "Columna2": 2,
+        "Acierto": true,
+        "Momento": "2026-11-05T21:03:20.3680171-03:00"
+      },
+      {
+        "Numero": 6,
+        "Fila1": 2,
+        "Columna1": 2,
+        "Fila2": 2,
+        "Columna2": 1,
+        "Acierto": false,
+        "Momento": "2026-11-05T21:03:21.7513664-03:00"
+      },
+      {
+        "Numero": 7,
+        "Fila1": 1,
+        "Columna1": 0,
+        "Fila2": 1,
+        "Columna2": 3,
+        "Acierto": false,
+        "Momento": "2026-11-05T21:03:24.0513819-03:00"
+      },
+      {
+        "Numero": 8,
+        "Fila1": 1,
+        "Columna1": 2,
+        "Fila2": 2,
+        "Columna2": 1,
+        "Acierto": true,
+        "Momento": "2026-11-05T21:03:26.001394-03:00"
+      },
+      {
+        "Numero": 9,
+        "Fila1": 2,
+        "Columna1": 0,
+        "Fila2": 1,
+        "Columna2": 0,
+        "Acierto": true,
+        "Momento": "2026-11-05T21:03:27.5180639-03:00"
+      },
+      {
+        "Numero": 10,
+        "Fila1": 2,
+        "Columna1": 3,
+        "Fila2": 3,
+        "Columna2": 2,
+        "Acierto": false,
+        "Momento": "2026-11-05T21:03:29.5513978-03:00"
+      },
+      {
+        "Numero": 11,
+        "Fila1": 1,
+        "Columna1": 3,
+        "Fila2": 3,
+        "Columna2": 2,
+        "Acierto": true,
+        "Momento": "2026-11-05T21:03:31.6680756-03:00"
+      },
+      {
+        "Numero": 12,
+        "Fila1": 3,
+        "Columna1": 3,
+        "Fila2": 2,
+        "Columna2": 2,
+        "Acierto": false,
+        "Momento": "2026-11-05T21:03:33.3513829-03:00"
+      },
+      {
+        "Numero": 13,
+        "Fila1": 3,
+        "Columna1": 1,
+        "Fila2": 0,
+        "Columna2": 3,
+        "Acierto": false,
+        "Momento": "2026-11-05T21:03:35.3847139-03:00"
+      },
+      {
+        "Numero": 14,
+        "Fila1": 3,
+        "Columna1": 0,
+        "Fila2": 0,
+        "Columna2": 3,
+        "Acierto": true,
+        "Momento": "2026-11-05T21:03:37.851388-03:00"
+      },
+      {
+        "Numero": 15,
+        "Fila1": 0,
+        "Columna1": 1,
+        "Fila2": 3,
+        "Columna2": 1,
+        "Acierto": true,
+        "Momento": "2026-11-05T21:03:39.534723-03:00"
+      },
+      {
+        "Numero": 16,
+        "Fila1": 2,
+        "Columna1": 3,
+        "Fila2": 0,
+        "Columna2": 0,
+        "Acierto": false,
+        "Momento": "2026-11-05T21:03:41.2847316-03:00"
+      },
+      {
+        "Numero": 17,
+        "Fila1": 2,
+        "Columna1": 2,
+        "Fila2": 0,
+        "Columna2": 0,
+        "Acierto": true,
+        "Momento": "2026-11-05T21:03:43.4680954-03:00"
+      },
+      {
+        "Numero": 18,
+        "Fila1": 3,
+        "Columna1": 3,
+        "Fila2": 2,
+        "Columna2": 3,
+        "Acierto": true,
+        "Momento": "2026-11-05T21:03:44.9180961-03:00"
+      }
+    ],
+    "Pares": [
+      {
+        "IdValor": 7,
+        "Puntos": 100
+      },
+      {
+        "IdValor": 2,
+        "Puntos": 100
+      },
+      {
+        "IdValor": 0,
+        "Puntos": 100
+      },
+      {
+        "IdValor": 1,
+        "Puntos": 100
+      },
+      {
+        "IdValor": 6,
+        "Puntos": 100
+      },
+      {
+        "IdValor": 5,
+        "Puntos": 100
+      },
+      {
+        "IdValor": 4,
+        "Puntos": 100
+      },
+      {
+        "IdValor": 3,
+        "Puntos": 100
+      }
+    ]
+  }
+]

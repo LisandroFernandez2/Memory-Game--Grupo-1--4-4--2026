@@ -1,28 +1,14 @@
-﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace juegojuego.BasedeDatos
 {
-    internal class JugadorDB
+    // Tabla "jugador": una fila por cada nombre de jugador distinto.
+    public class JugadorDB
     {
-        //Propiedades de la tabla JugadorDB
-        public int ID { get; set; }
-        public string Nombre { get; set; }
+        public int Id { get; set; }
+        public string Nombre { get; set; } = "";
 
-        //un constructor para que lo lea Microsoft.EntityFrameworkCore
-        public JugadorDB()
-        {
-
-        }
-
-        //constructor
-        public JugadorDB(int id, string N)
-        {
-            ID = id;
-            Nombre = N;
-        }
+        // Partidas jugadas por este jugador
+        public List<PartidaDB> Partidas { get; set; } = new List<PartidaDB>();
     }
 }

@@ -217,3 +217,22 @@
 [2026-11-05 09:51:23] Partida iniciada: jugador=LELELEELELEL, nivel=Muy Facil
 [2026-11-05 09:51:56] Partida finalizada: LELELEELELEL | Muy Facil | Intentos: 18 | Tiempo:00:33 | Puntos:  967 | 05/11/2026 09:51
 [2026-11-05 09:53:24] Partida iniciada: jugador=LELELEELELEL, nivel=Facil
+[2026-11-05 20:36:30] BD: error al leer los records: Unknown column 'r.Id' in 'field list'
+[2026-11-05 20:36:49] Partida iniciada: jugador=KEVIN, nivel=Muy Facil
+[2026-11-05 20:37:22] Partida finalizada: KEVIN        | Muy Facil | Intentos: 17 | Tiempo:00:33 | Puntos:  977 | 05/11/2026 20:37
+[2026-11-05 20:37:22] BD: error al guardar la partida: Unknown column 'm.CantidadJugadores' in 'field list'
+[2026-11-05 20:37:22] BD: no se pudo guardar el JSON: Unknown column 'm.CantidadJugadores' in 'field list'
+[2026-11-05 20:39:05] Partida iniciada: jugador=KEVIN, nivel=Muy Facil
+[2026-11-05 20:39:30] Partida finalizada: KEVIN        | Muy Facil | Intentos: 12 | Tiempo:00:25 | Puntos: 1035 | 05/11/2026 20:39
+[2026-11-05 20:39:30] BD: error al guardar la partida: Unknown column 'm.CantidadJugadores' in 'field list'
+[2026-11-05 20:39:30] BD: no se pudo guardar el JSON: Unknown column 'm.CantidadJugadores' in 'field list'
+[2026-11-05 20:52:50] Partida iniciada: jugador=FERM, nivel=Muy Facil
+[2026-11-05 20:53:07] Partida finalizada: FERM         | Muy Facil | Intentos: 11 | Tiempo:00:16 | Puntos: 1054 | 05/11/2026 20:53
+[2026-11-05 20:53:07] BD: error al guardar la partida: Unknown column 'm.CantidadJugadores' in 'field list'
+[2026-11-05 21:02:01] BD: error al guardar la partida: Unknown column 'm.CantidadJugadores' in 'field list'
+[2026-11-05 21:03:00] BD: error al guardar la partida: Unknown column 'm.CantidadJugadores' in 'field list'
+[2026-11-05 21:03:12] Partida iniciada: jugador=PEPE, nivel=Muy Facil
+[2026-11-05 21:03:44] Partida finalizada: PEPE         | Muy Facil | Intentos: 18 | Tiempo:00:32 | Puntos:  968 | 05/11/2026 21:03
+[2026-11-05 21:03:45] BD: error al guardar la partida: Unknown column 'm.CantidadJugadores' in 'field list'
+[2026-11-05 21:09:36] BD: partida guardada (id 1, gano=True)
+[2026-11-05 21:09:36] BD: partida guardada (id 2, gano=True)

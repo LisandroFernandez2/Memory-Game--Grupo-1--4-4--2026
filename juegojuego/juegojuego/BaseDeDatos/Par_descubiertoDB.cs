@@ -1,32 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace juegojuego.BasedeDatos
 {
-    internal class Par_descubiertoDB
+    // Tabla "par_descubierto": un par encontrado en una partida y los puntos que dio.
+    public class Par_descubiertoDB
     {
-        //Propiedades de la tabla Par_descubiertoDB
-        public int ID { get; set; }
-        public int Partida_id { get; set; }
-        public int Id_valor { get; set; }
+        public int Id { get; set; }
+        public int PartidaId { get; set; }
+        // Mismo idValor de las cartas
+        public int IdValor { get; set; }
         public int Puntos { get; set; }
 
-        //un constructor para que lo lea Microsoft.EntityFrameworkCore
-        public Par_descubiertoDB()
-        {
-
-        }
-
-        //constructor
-        public Par_descubiertoDB(int id, int P_id, int V_id, int P)
-        {
-            ID = id;
-            Partida_id = P_id;
-            Id_valor = V_id;
-            Puntos = P;
-        }
+        public PartidaDB Partida { get; set; }
     }
 }

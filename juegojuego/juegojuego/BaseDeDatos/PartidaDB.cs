@@ -1,46 +1,30 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace juegojuego.BasedeDatos
 {
-    internal class PartidaDB
+    // Tabla "partida": una partida terminada (ganada o perdida).
+    // El modo de juego se obtiene por Nivel.ModoJuego (no se repite aca).
+    // Si la partida se gana en un modo con GuardaRecords, un trigger de MySQL la copia sola a la tabla "record".
+    public class PartidaDB
     {
-        //Propiedades de la tabla PartidaDB
-        public int ID { get; set; }
-        public int Jugador_id { get; set; }
-        public int Nivel_id { get; set; }
-        public int Tematica_id { get; set; }
+        public int Id { get; set; }
+        public int JugadorId { get; set; }
+        public int NivelId { get; set; }
+        public int TematicaId { get; set; }
         public DateTime Fecha { get; set; }
         public int Intentos { get; set; }
         public int Aciertos { get; set; }
         public int Fallos { get; set; }
-        public int Tiempo_segundos { get; set; }
+        public int TiempoSegundos { get; set; }
         public int Puntuacion { get; set; }
-        public int Gano { get; set; }
+        public bool Gano { get; set; }
 
-        //un constructor para que lo lea Microsoft.EntityFrameworkCore
-        public PartidaDB()
-        {
+        public JugadorDB Jugador { get; set; }
+        public NivelDB Nivel { get; set; }
+        public TematicaDB Tematica { get; set; }
 
-        }
-
-        //constructor
-        public PartidaDB(int id, int J_id, int N_id, int T_id, DateTime Fec, int I, int AC, int F, int T_S, int P, int G)
-        {
-            ID = id;
-            Jugador_id = J_id;
-            Nivel_id = N_id;
-            Tematica_id = T_id;
-            Fecha = Fec;
-            Intentos = I;
-            Aciertos = AC;
-            Fallos = F;
-            Tiempo_segundos = T_S;
-            Puntuacion = P;
-            Gano = G;
-        }
+        public List<MovimientoDB> Movimientos { get; set; } = new List<MovimientoDB>();
+        public List<Par_descubiertoDB> ParesDescubiertos { get; set; } = new List<Par_descubiertoDB>();
     }
 }
